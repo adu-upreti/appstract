@@ -1,536 +1,1199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Appstract Development | Custom Software, AI Automation &amp; Digital Growth</title>
-<meta name="description" content="Appstract Development is an AI-first software company building custom software, AI agents, automation, and digital growth solutions for startups and enterprises in Nepal and worldwide." />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://appstractdev.com/" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Appstract Development | Custom Software, AI Automation & Digital Growth" />
-<meta property="og:description" content="Custom software, AI agents, automation and digital growth solutions for startups and enterprises — built by an AI-first team in Nepal, serving clients worldwide." />
-<meta property="og:url" content="https://appstractdev.com/" />
-<meta property="og:image" content="assets/img/og-cover.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
-<link rel="icon" type="image/png" href="assets/img/logo-black.png" />
-<link rel="apple-touch-icon" href="assets/img/logo-black.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Appstract Development | Custom Software, AI Automation &amp; Digital
+      Growth
+    </title>
+    <meta
+      name="description"
+      content="Appstract Development is an AI-first software company building custom software, AI agents, automation, and digital growth solutions for startups and enterprises in Nepal and worldwide."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://appstractdev.com/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Appstract Development | Custom Software, AI Automation & Digital Growth"
+    />
+    <meta
+      property="og:description"
+      content="Custom software, AI agents, automation and digital growth solutions for startups and enterprises — built by an AI-first team in Nepal, serving clients worldwide."
+    />
+    <meta property="og:url" content="https://appstractdev.com/" />
+    <meta property="og:image" content="assets/img/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="assets/img/logo-black.png" />
+    <link rel="apple-touch-icon" href="assets/img/logo-black.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ICON SPRITE -->
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="i-ai" viewBox="0 0 24 24">
+          <path
+            d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+            stroke-linecap="round"
+          />
+          <circle cx="12" cy="12" r="4" />
+        </symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24">
+          <path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z" />
+          <path
+            d="m8.5 12 2.3 2.3L16 9"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-automation" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="3" />
+          <path
+            d="M19.4 13.5a7.96 7.96 0 0 0 0-3l1.8-1.4-2-3.4-2.1.7a8 8 0 0 0-2.6-1.5L14 2h-4l-.5 2.4a8 8 0 0 0-2.6 1.5l-2.1-.7-2 3.4 1.8 1.4a7.96 7.96 0 0 0 0 3l-1.8 1.4 2 3.4 2.1-.7a8 8 0 0 0 2.6 1.5L10 22h4l.5-2.4a8 8 0 0 0 2.6-1.5l2.1.7 2-3.4Z"
+          />
+        </symbol>
+        <symbol id="i-rocket" viewBox="0 0 24 24">
+          <path
+            d="M12 2c2.5 2.1 4 5.2 4 8.8 0 1.6-.3 3.1-.9 4.5L12 18l-3.1-2.7A11.6 11.6 0 0 1 8 10.8C8 7.2 9.5 4.1 12 2Z"
+          />
+          <circle cx="12" cy="9" r="1.6" />
+          <path
+            d="M9 15.5 6.5 18 6 21l3-.5 2.5-2.5M15 15.5l2.5 2.5.5 3-3-.5-2.5-2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-startup" viewBox="0 0 24 24">
+          <path
+            d="M4 19h16M6 19V9l4-3 4 3v10M14 19v-5l4-2v7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-globe" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <path
+            d="M2 12h20M12 2c2.5 2.7 4 6.3 4 10s-1.5 7.3-4 10c-2.5-2.7-4-6.3-4-10s1.5-7.3 4-10Z"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path
+            d="M5 12h14M13 6l6 6-6 6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-arrow-up-right" viewBox="0 0 24 24">
+          <path
+            d="M7 17 17 7M9 7h8v8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-quote" viewBox="0 0 24 24">
+          <path
+            d="M7 11c0-3 1.6-5 4-5.7L11 4C7 5 4.5 8 4.5 12.3 4.5 15 6 17 8.3 17c1.8 0 3.2-1.4 3.2-3.3S10 11 8.5 11H7Zm9 0c0-3 1.6-5 4-5.7L20 4c-4 1-6.5 4-6.5 8.3 0 2.7 1.5 4.7 3.8 4.7 1.8 0 3.2-1.4 3.2-3.3S19 11 17.5 11H16Z"
+          />
+        </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12" />
+        </symbol>
+        <symbol id="i-users" viewBox="0 0 24 24">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+        </symbol>
+        <symbol id="i-team" viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+        </symbol>
+        <symbol id="i-industry" viewBox="0 0 24 24">
+          <rect x="2" y="7" width="20" height="14" rx="2" />
+          <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+          <line x1="12" y1="12" x2="12" y2="16" />
+          <line x1="10" y1="14" x2="14" y2="14" />
+        </symbol>
+        <symbol id="i-star" viewBox="0 0 24 24">
+          <polygon
+            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            fill="currentColor"
+            stroke="none"
+          />
+        </symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 24 24">
+          <path
+            d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.1.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.1-.2 0-.4.1-.5.2-.2.4-.5.6-.7.2-.2.2-.4.1-.6-.1-.3-.7-1.6-.9-2.1-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.1 3 .1.2 1.9 3 4.7 4.2 2.3 1 2.8.8 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.2-.2-.4-.2Z"
+          />
+          <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z" />
+        </symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24">
+          <path
+            d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path
+            d="m4 7 8 6 8-6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path
+            d="M12 7v5l3 3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24">
+          <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" />
+          <circle cx="12" cy="10" r="2.5" />
+        </symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="3" />
+          <path
+            d="M7.5 10v6.5M7.5 7.5v.01M11 16.5V12c0-1.2.8-2 2-2s2 .8 2 2v4.5M11 12v4.5"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24">
+          <path
+            d="M14 21v-7h2.3l.4-3H14V9c0-.9.3-1.5 1.6-1.5H17V4.8c-.7-.1-1.6-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2V11H8v3h2.5v7H14Z"
+          />
+        </symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.2" cy="6.8" r="1" />
+        </symbol>
+        <symbol id="i-youtube" viewBox="0 0 24 24">
+          <rect x="2.5" y="5.5" width="19" height="13" rx="3" />
+          <path d="m10.5 9.5 4 2.5-4 2.5Z" />
+        </symbol>
+        <symbol id="i-tiktok" viewBox="0 0 24 24">
+          <path
+            d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5h.7M14 3c.3 2.4 1.9 4.2 4.3 4.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-x" viewBox="0 0 24 24">
+          <path d="M4 4l16 16M20 4 4 20" stroke-linecap="round" />
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24">
+          <path d="M6 6l12 12M18 6 6 18" stroke-linecap="round" />
+        </symbol>
+        <symbol id="i-finance" viewBox="0 0 24 24">
+          <path
+            d="M3 21h18M5 21V10l4-3 4 3v11M13 21V6l3-2 3 2v15"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-education" viewBox="0 0 24 24">
+          <path d="M12 3 2 8l10 5 10-5-10-5Z" />
+          <path
+            d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-hospitality" viewBox="0 0 24 24">
+          <path
+            d="M3 19V9l5-4 5 4v10M13 19l5-12 4 12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path d="M3 19h18" stroke-linecap="round" />
+        </symbol>
+        <symbol id="i-agri" viewBox="0 0 24 24">
+          <path
+            d="M12 2c3 2 5 5 5 9 0 4-2.2 8-5 11-2.8-3-5-7-5-11 0-4 2-7 5-9Z"
+          />
+          <path d="M12 22V12" stroke-linecap="round" />
+        </symbol>
+        <symbol id="i-ngo" viewBox="0 0 24 24">
+          <path
+            d="M12 21s-7-4.4-9-9c-1.2-2.8.3-6 3.4-6.6 1.9-.4 3.8.4 5 1.9C12.6 5.8 14.5 5 16.4 5.4 19.5 6 21 9.2 19.8 12 17.8 16.6 12 21 12 21Z"
+          />
+        </symbol>
+        <symbol id="i-health" viewBox="0 0 24 24">
+          <path
+            d="M12 21s-7-4.4-9-9c-1.2-2.8.3-6 3.4-6.6 1.9-.4 3.8.4 5 1.9 1.2-1.5 3.1-2.3 5-1.9C19.5 6 21 9.2 19.8 12 17.8 16.6 12 21 12 21Z"
+          />
+          <path d="M9 11h2v-2h2v2h2v2h-2v2h-2v-2H9z" />
+        </symbol>
+        <symbol id="i-ecommerce" viewBox="0 0 24 24">
+          <circle cx="9" cy="20" r="1.3" />
+          <circle cx="17" cy="20" r="1.3" />
+          <path
+            d="M2 3h2l2.4 12.2A2 2 0 0 0 8.4 17h9.2a2 2 0 0 0 2-1.6L21 7H6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-tech" viewBox="0 0 24 24">
+          <rect x="4" y="4" width="16" height="12" rx="2" />
+          <path d="M2 20h20M9 16v2.5M15 16v2.5" stroke-linecap="round" />
+        </symbol>
+        <symbol id="i-manufacturing" viewBox="0 0 24 24">
+          <path d="M3 21V11l5 3V11l5 3V8l5 4v9H3Z" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="i-logistics" viewBox="0 0 24 24">
+          <path d="M3 16V6a1 1 0 0 1 1-1h9v11" />
+          <path d="M13 9h4l4 4v3h-8M3 16h1m12 0h2" />
+          <circle cx="7.5" cy="18" r="1.7" />
+          <circle cx="17.5" cy="18" r="1.7" />
+        </symbol>
+      </defs>
+    </svg>
 
-<!-- ICON SPRITE -->
-<svg class="icon-sprite" aria-hidden="true" focusable="false"><defs>
-<symbol id="i-ai" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke-linecap="round"/><circle cx="12" cy="12" r="4"/></symbol>
-<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m8.5 12 2.3 2.3L16 9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-automation" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 13.5a7.96 7.96 0 0 0 0-3l1.8-1.4-2-3.4-2.1.7a8 8 0 0 0-2.6-1.5L14 2h-4l-.5 2.4a8 8 0 0 0-2.6 1.5l-2.1-.7-2 3.4 1.8 1.4a7.96 7.96 0 0 0 0 3l-1.8 1.4 2 3.4 2.1-.7a8 8 0 0 0 2.6 1.5L10 22h4l.5-2.4a8 8 0 0 0 2.6-1.5l2.1.7 2-3.4Z"/></symbol>
-<symbol id="i-rocket" viewBox="0 0 24 24"><path d="M12 2c2.5 2.1 4 5.2 4 8.8 0 1.6-.3 3.1-.9 4.5L12 18l-3.1-2.7A11.6 11.6 0 0 1 8 10.8C8 7.2 9.5 4.1 12 2Z"/><circle cx="12" cy="9" r="1.6"/><path d="M9 15.5 6.5 18 6 21l3-.5 2.5-2.5M15 15.5l2.5 2.5.5 3-3-.5-2.5-2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-startup" viewBox="0 0 24 24"><path d="M4 19h16M6 19V9l4-3 4 3v10M14 19v-5l4-2v7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c2.5 2.7 4 6.3 4 10s-1.5 7.3-4 10c-2.5-2.7-4-6.3-4-10s1.5-7.3 4-10Z" stroke-linecap="round"/></symbol>
-<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-quote" viewBox="0 0 24 24"><path d="M7 11c0-3 1.6-5 4-5.7L11 4C7 5 4.5 8 4.5 12.3 4.5 15 6 17 8.3 17c1.8 0 3.2-1.4 3.2-3.3S10 11 8.5 11H7Zm9 0c0-3 1.6-5 4-5.7L20 4c-4 1-6.5 4-6.5 8.3 0 2.7 1.5 4.7 3.8 4.7 1.8 0 3.2-1.4 3.2-3.3S19 11 17.5 11H16Z"/></symbol>
-<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
-<symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
-<symbol id="i-team" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
-<symbol id="i-industry" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></symbol>
-<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor" stroke="none"/></symbol>
-<symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.1.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.1-.2 0-.4.1-.5.2-.2.4-.5.6-.7.2-.2.2-.4.1-.6-.1-.3-.7-1.6-.9-2.1-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.1 3 .1.2 1.9 3 4.7 4.2 2.3 1 2.8.8 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.2-.2-.4-.2Z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></symbol>
-<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></symbol>
-<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
-<symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10v6.5M7.5 7.5v.01M11 16.5V12c0-1.2.8-2 2-2s2 .8 2 2v4.5M11 12v4.5" stroke-linecap="round"/></symbol>
-<symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 21v-7h2.3l.4-3H14V9c0-.9.3-1.5 1.6-1.5H17V4.8c-.7-.1-1.6-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2V11H8v3h2.5v7H14Z"/></symbol>
-<symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></symbol>
-<symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="3"/><path d="m10.5 9.5 4 2.5-4 2.5Z"/></symbol>
-<symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5h.7M14 3c.3 2.4 1.9 4.2 4.3 4.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-x" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20" stroke-linecap="round"/></symbol>
-<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></symbol>
-<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke-linecap="round"/></symbol>
-<symbol id="i-finance" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l4-3 4 3v11M13 21V6l3-2 3 2v15" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-education" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-hospitality" viewBox="0 0 24 24"><path d="M3 19V9l5-4 5 4v10M13 19l5-12 4 12" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 19h18" stroke-linecap="round"/></symbol>
-<symbol id="i-agri" viewBox="0 0 24 24"><path d="M12 2c3 2 5 5 5 9 0 4-2.2 8-5 11-2.8-3-5-7-5-11 0-4 2-7 5-9Z"/><path d="M12 22V12" stroke-linecap="round"/></symbol>
-<symbol id="i-ngo" viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9-9c-1.2-2.8.3-6 3.4-6.6 1.9-.4 3.8.4 5 1.9C12.6 5.8 14.5 5 16.4 5.4 19.5 6 21 9.2 19.8 12 17.8 16.6 12 21 12 21Z"/></symbol>
-<symbol id="i-health" viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9-9c-1.2-2.8.3-6 3.4-6.6 1.9-.4 3.8.4 5 1.9 1.2-1.5 3.1-2.3 5-1.9C19.5 6 21 9.2 19.8 12 17.8 16.6 12 21 12 21Z"/><path d="M9 11h2v-2h2v2h2v2h-2v2h-2v-2H9z"/></symbol>
-<symbol id="i-ecommerce" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/><path d="M2 3h2l2.4 12.2A2 2 0 0 0 8.4 17h9.2a2 2 0 0 0 2-1.6L21 7H6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="i-tech" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M2 20h20M9 16v2.5M15 16v2.5" stroke-linecap="round"/></symbol>
-<symbol id="i-manufacturing" viewBox="0 0 24 24"><path d="M3 21V11l5 3V11l5 3V8l5 4v9H3Z" stroke-linejoin="round"/></symbol>
-<symbol id="i-logistics" viewBox="0 0 24 24"><path d="M3 16V6a1 1 0 0 1 1-1h9v11"/><path d="M13 9h4l4 4v3h-8M3 16h1m12 0h2"/><circle cx="7.5" cy="18" r="1.7"/><circle cx="17.5" cy="18" r="1.7"/></symbol>
-</defs></svg>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<a class="skip-link" href="#main">Skip to content</a>
-
-<!-- ============ NAVBAR ============ -->
-<header class="nav" id="nav">
-  <div class="nav__inner container">
-    <a href="#home" class="nav__brand" aria-label="Appstract Development — Home">
-      <span class="nav__mark" aria-hidden="true">
-        <img src="assets/img/logo-navy.png" alt="" width="40" height="40" loading="eager" />
-      </span>
-      <span class="nav__word">Appstract</span>
-    </a>
-    <nav class="nav__links" aria-label="Primary">
-      <a href="#home" class="nav__link is-active">Home</a>
-      <a href="about.html" class="nav__link">About</a>
-      <a href="services.html" class="nav__link">Services</a>
-      <a href="#portfolio" class="nav__link">Review</a>
-      <a href="team.html" class="nav__link">Team</a>
-      <a href="#contact" class="nav__link">Contact</a>
-    </nav>
-    <div class="nav__actions">
-      <a href="https://wa.me/9779745717445" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">
-        <svg class="icon" width="16" height="16"><use href="#i-whatsapp"/></svg><span>WhatsApp</span>
-      </a>
-      <a href="schedule.html" class="btn btn--primary btn--sm"><span>Schedule Consultation</span></a>
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-        <svg class="icon icon--menu" width="22" height="22"><use href="#i-menu"/></svg>
-        <svg class="icon icon--close" width="22" height="22"><use href="#i-close"/></svg>
-      </button>
-    </div>
-  </div>
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="mobile-menu__body">
-      <nav class="mobile-menu__links" aria-label="Mobile">
-        <a href="#home" class="mobile-menu__link">Home</a>
-        <a href="about.html" class="mobile-menu__link">About</a>
-        <a href="services.html" class="mobile-menu__link">Services</a>
-        <a href="#portfolio" class="mobile-menu__link">Reviews</a>
-        <a href="team.html" class="mobile-menu__link">Team</a>
-        <a href="#contact" class="mobile-menu__link">Contact</a>
-      </nav>
-      <div class="mobile-menu__actions">
-        <a href="https://wa.me/9779745717445" class="btn btn--ghost btn--block" target="_blank" rel="noopener">
-          <svg class="icon" width="18" height="18"><use href="#i-whatsapp"/></svg><span>Chat on WhatsApp</span>
-        </a>
-        <a href="schedule.html" class="btn btn--primary btn--block">Schedule Consultation</a>
-      </div>
-    </div>
-  </div>
-</header>
-
-<main id="main">
-
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="home">
-    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
-    <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
-    <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
-    <div class="container hero__container">
-      <div class="hero__content">
-        <p class="eyebrow eyebrow--dark" data-reveal>
-          AI-First Software Studio &mdash; Nepal &amp; Worldwide
-        </p>
-        <h1 class="hero__title" data-reveal data-reveal-delay="1">
-          Custom Software,<br>
-          <span class="text-gradient">AI Automation</span>
-          &amp; Growth Solutions.
-        </h1>
-        <p class="hero__subtitle" data-reveal data-reveal-delay="2">
-          We build scalable software, intelligent AI systems, business automation workflows, and digital growth solutions that help startups and enterprises accelerate innovation.
-        </p>
-        <div class="hero__actions" data-reveal data-reveal-delay="3">
-          <a href="schedule.html" class="btn btn--primary btn--lg btn--magnetic">
-            <span>Schedule Consultation</span>
-            <svg class="icon" width="18" height="18"><use href="#i-arrow"/></svg>
-          </a>
-          <a href="https://wa.me/9779745717445" class="btn btn--outline-light btn--lg btn--magnetic" target="_blank" rel="noopener">
-            <svg class="icon" width="18" height="18"><use href="#i-whatsapp"/></svg>
-            <span>WhatsApp Now</span>
-          </a>
-        </div>
-      </div>
-      <div class="hero__visual" data-reveal data-reveal-delay="2" aria-hidden="true">
-        <div class="hero__badge">
-          <img src="assets/img/logo-navy.png" alt="" width="280" height="280" loading="eager" />
-        </div>
-        <div class="hero__orbit hero__orbit--1"></div>
-        <div class="hero__orbit hero__orbit--2"></div>
-        <div class="hero__chip hero__chip--1">
-          <svg class="icon" width="16" height="16"><use href="#i-ai"/></svg>
-          <span>Multi&#8209;agent systems</span>
-        </div>
-        <div class="hero__chip hero__chip--2">
-          <svg class="icon" width="16" height="16"><use href="#i-automation"/></svg>
-          <span>Workflow automation</span>
-        </div>
-        <div class="hero__chip hero__chip--3">
-          <svg class="icon" width="16" height="16"><use href="#i-shield"/></svg>
-          <span>Security&#8209;first builds</span>
-        </div>
-        <div class="hero__chip hero__chip--4">
-          <svg class="icon" width="16" height="16"><use href="#i-shield"/></svg>
-          <span>Fast&#8209;Project Delivery</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ============ END HERO ============ -->
-
-  <!-- ============ STATS ============ -->
-  <section class="stats" id="stats" aria-label="Trust statistics">
-    <div class="container">
-      <div class="stats__grid">
-        <div class="stats__item" data-reveal data-reveal-delay="1">
-          <div class="stats__number"><span class="stats__count" data-target="10">0</span><span class="stats__suffix">+</span></div>
-          <div class="stats__icon" aria-hidden="true"><svg class="icon" width="22" height="22"><use href="#i-check"/></svg></div>
-          <p class="stats__label">Projects Delivered</p>
-        </div>
-        <div class="stats__item" data-reveal data-reveal-delay="2">
-          <div class="stats__number"><span class="stats__count" data-target="10">0</span><span class="stats__suffix">+</span></div>
-          <div class="stats__icon" aria-hidden="true"><svg class="icon" width="22" height="22"><use href="#i-users"/></svg></div>
-          <p class="stats__label">Happy Clients</p>
-        </div>
-        <div class="stats__item" data-reveal data-reveal-delay="3">
-          <div class="stats__number"><span class="stats__count" data-target="15">0</span><span class="stats__suffix">+</span></div>
-          <div class="stats__icon" aria-hidden="true"><svg class="icon" width="22" height="22"><use href="#i-team"/></svg></div>
-          <p class="stats__label">Team Members</p>
-        </div>
-        <div class="stats__item" data-reveal data-reveal-delay="3">
-          <div class="stats__number"><span class="stats__count" data-target="5">0</span><span class="stats__suffix">+</span></div>
-          <div class="stats__icon" aria-hidden="true"><svg class="icon" width="22" height="22"><use href="#i-industry"/></svg></div>
-          <p class="stats__label">Industries Served</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ============ END STATS ============ -->
-
-  <!-- ============ PARTNERS ============ -->
-  <section class="section section--alt partners" id="partners">
-    <div class="container">
-      <div class="section__head" data-reveal>
-        <p class="eyebrow"><span class="eyebrow__dot"></span>Trusted By</p>
-        <h2 class="section__title">Our Clients &amp; Partners</h2>
-        <p class="section__lead">Businesses across Nepal and beyond trust Appstract to power their digital growth.</p>
-      </div>
-      <div class="partners__grid">
-        <div class="partner-card" data-reveal data-reveal-delay="1">
-          <a href="https://perfecto.com.np" target="_blank" rel="noopener" style="display:contents">
-            <img src="assets/img/partners/perfecto.png" alt="Perfecto" class="partner-card__logo" width="72" height="72" loading="lazy" />
-            <span class="partner-card__name">Perfecto</span>
-          </a>
-        </div>
-        <div class="partner-card" data-reveal data-reveal-delay="1">
-          <a href="https://vrindavanmb.com" target="_blank" rel="noopener" style="display:contents">
-            <img src="assets/img/partners/vrindavan.png" alt="Vrindavan" class="partner-card__logo" width="72" height="72" loading="lazy" />
-            <span class="partner-card__name">Vrindavan</span>
-          </a>
-        </div>
-        <div class="partner-card" data-reveal data-reveal-delay="2">
-          <a href="https://princetech.com.np" target="_blank" rel="noopener" style="display:contents">
-            <img src="assets/img/partners/princetech.jpeg" alt="PrinceTech" class="partner-card__logo" width="72" height="72" loading="lazy" />
-            <span class="partner-card__name">PrinceTech</span>
-          </a>
-        </div>
-        <div class="partner-card" data-reveal data-reveal-delay="2">
-          <a href="https://dairyking.com.np" target="_blank" rel="noopener" style="display:contents">
-            <img src="assets/img/partners/dairyking.webp" alt="Dairy King" class="partner-card__logo" width="72" height="72" loading="lazy" />
-            <span class="partner-card__name">Dairy King</span>
-          </a>
-        </div>
-        <div class="partner-card" data-reveal data-reveal-delay="3">
-          <a href="https://everestsustainability.com/" target="_blank" rel="noopener" style="display:contents">
-            <img src="assets/img/partners/esf.png" alt="Everest Sustainability" class="partner-card__logo" width="72" height="72" loading="lazy" />
-            <span class="partner-card__name">Everest Sustainability</span>
-          </a>
-        </div>
-        <div class="partner-card" data-reveal data-reveal-delay="3">
-          <a href="https://achievementeducation.com/" target="_blank" rel="noopener" style="display:contents">
-            <img src="assets/img/partners/achivement.png" alt="Achievement Education" class="partner-card__logo" width="72" height="72" loading="lazy" />
-            <span class="partner-card__name">Achievement Education</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ============ END PARTNERS ============ -->
-
-  <!-- ============ WHY CHOOSE APPSTRACT ============ -->
-  <section class="section why" id="why">
-    <div class="container">
-      <div class="section__head" data-reveal>
-        <p class="eyebrow"><span class="eyebrow__dot"></span>Why Appstract</p>
-        <h2 class="section__title">Built Different, <span class="text-gradient">Delivered Better</span></h2>
-        <p class="section__lead">Every decision we make is driven by quality, speed, and your long-term success.</p>
-      </div>
-      <div class="why__grid">
-        <div class="why-card" data-reveal data-reveal-delay="1">
-          <div class="why-card__icon"><svg class="icon" width="24" height="24"><use href="#i-ai"/></svg></div>
-          <h3 class="why-card__title">AI-First Development</h3>
-          <p class="why-card__text">Modern AI-powered solutions embedded into every layer of the product we build.</p>
-        </div>
-        <div class="why-card" data-reveal data-reveal-delay="2">
-          <div class="why-card__icon"><svg class="icon" width="24" height="24"><use href="#i-rocket"/></svg></div>
-          <h3 class="why-card__title">Rapid Delivery</h3>
-          <p class="why-card__text">Fast execution without compromising quality — we ship on time, every time.</p>
-        </div>
-        <div class="why-card" data-reveal data-reveal-delay="3">
-          <div class="why-card__icon"><svg class="icon" width="24" height="24"><use href="#i-shield"/></svg></div>
-          <h3 class="why-card__title">Security-Focused</h3>
-          <p class="why-card__text">Built with cybersecurity best practices from day one, not bolted on later.</p>
-        </div>
-        <div class="why-card" data-reveal data-reveal-delay="1">
-          <div class="why-card__icon"><svg class="icon" width="24" height="24"><use href="#i-startup"/></svg></div>
-          <h3 class="why-card__title">Startup Friendly</h3>
-          <p class="why-card__text">Affordable and scalable solutions designed to grow alongside your business.</p>
-        </div>
-        <div class="why-card" data-reveal data-reveal-delay="2">
-          <div class="why-card__icon"><svg class="icon" width="24" height="24"><use href="#i-automation"/></svg></div>
-          <h3 class="why-card__title">Automation Experts</h3>
-          <p class="why-card__text">Reduce manual effort and unlock efficiency through intelligent automation workflows.</p>
-        </div>
-        <div class="why-card" data-reveal data-reveal-delay="3">
-          <div class="why-card__icon"><svg class="icon" width="24" height="24"><use href="#i-globe"/></svg></div>
-          <h3 class="why-card__title">International Standards</h3>
-          <p class="why-card__text">Global quality, documentation, and support — wherever your business operates.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ============ END WHY ============ -->
-
-  <!-- ============ INDUSTRIES ============ -->
-  <section class="section section--dark industries" id="services">
-    <div class="container">
-      <div class="section__head" data-reveal>
-        <p class="eyebrow eyebrow--dark"><span class="eyebrow__dot"></span>Industries</p>
-        <h2 class="section__title" style="color:var(--on-dark)">We Build For <span class="text-gradient">Every Industry</span></h2>
-        <p class="section__lead" style="color:var(--on-dark-soft)">We build solutions for businesses across every industry.</p>
-      </div>
-      <div class="industries__grid">
-        <div class="industry-chip" data-reveal data-reveal-delay="1"><svg class="icon" width="20" height="20"><use href="#i-finance"/></svg><span>Finance</span></div>
-        <div class="industry-chip" data-reveal data-reveal-delay="1"><svg class="icon" width="20" height="20"><use href="#i-education"/></svg><span>Education</span></div>
-        <div class="industry-chip" data-reveal data-reveal-delay="2"><svg class="icon" width="20" height="20"><use href="#i-hospitality"/></svg><span>Hospitality</span></div>
-        <div class="industry-chip" data-reveal data-reveal-delay="2"><svg class="icon" width="20" height="20"><use href="#i-agri"/></svg><span>Agriculture</span></div>
-        <div class="industry-chip" data-reveal data-reveal-delay="3"><svg class="icon" width="20" height="20"><use href="#i-ngo"/></svg><span>NGO / INGO</span></div>
-        <div class="industry-chip" data-reveal data-reveal-delay="1"><svg class="icon" width="20" height="20"><use href="#i-health"/></svg><span>Healthcare</span></div>
-        <div class="industry-chip" data-reveal data-reveal-delay="2"><svg class="icon" width="20" height="20"><use href="#i-ecommerce"/></svg><span>E-commerce</span></div>
-        <div class="industry-chip" data-reveal data-reveal-delay="3"><svg class="icon" width="20" height="20"><use href="#i-tech"/></svg><span>Technology</span></div>
-        <div class="industry-chip" data-reveal data-reveal-delay="1"><svg class="icon" width="20" height="20"><use href="#i-manufacturing"/></svg><span>Manufacturing</span></div>
-        <div class="industry-chip" data-reveal data-reveal-delay="2"><svg class="icon" width="20" height="20"><use href="#i-logistics"/></svg><span>Logistics</span></div>
-      </div>
-    </div>
-  </section>
-  <!-- ============ END INDUSTRIES ============ -->
-
-  <!-- ============ TESTIMONIALS ============ -->
-  <section class="section testimonials-section" id="portfolio">
-    <div class="container">
-      <div class="section__head" data-reveal>
-        <p class="eyebrow"><span class="eyebrow__dot"></span>Client Stories</p>
-        <h2 class="section__title">What Our <span class="text-gradient">Clients Say</span></h2>
-        <p class="section__lead">Real results, real relationships — hear from the businesses we've built for.</p>
-      </div>
-      <div class="testi__grid">
-
-        <div class="testi-card" data-reveal data-reveal-delay="1">
-          <div class="testi-card__stars" aria-label="5 stars">
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-          </div>
-          <p class="testi-card__text">"Appstract helped us build our digital presence through web development, local SEO, and social media management. The results significantly improved our visibility and business growth."</p>
-          <div class="testi-card__meta">
-            <div class="testi-card__avatar" aria-hidden="true">SU</div>
-            <div>
-              <p class="testi-card__name">Sagar Upreti</p>
-              <p class="testi-card__role">Founder &mdash; Vrindavan Misthanna Bhandar</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testi-card" data-reveal data-reveal-delay="2">
-          <div class="testi-card__stars" aria-label="5 stars">
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-          </div>
-          <p class="testi-card__text">"Professional development process and excellent support throughout the project."</p>
-          <div class="testi-card__meta">
-            <div class="testi-card__avatar" aria-hidden="true">AG</div>
-            <div>
-              <p class="testi-card__name">Ashmin Gautam</p>
-              <p class="testi-card__role">Founder &mdash; Perfecto</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testi-card" data-reveal data-reveal-delay="3">
-          <div class="testi-card__stars" aria-label="5 stars">
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-          </div>
-          <p class="testi-card__text">"Reliable technology partner with strong technical expertise."</p>
-          <div class="testi-card__meta">
-            <div class="testi-card__avatar" aria-hidden="true">NB</div>
-            <div>
-              <p class="testi-card__name">Nischal Baniya</p>
-              <p class="testi-card__role">Co-Founder &mdash; Everest Sustainability</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testi-card" data-reveal data-reveal-delay="1">
-          <div class="testi-card__stars" aria-label="5 stars">
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-          </div>
-          <p class="testi-card__text">"Delivered a modern website that reflects our brand professionally."</p>
-          <div class="testi-card__meta">
-            <div class="testi-card__avatar" aria-hidden="true">AA</div>
-            <div>
-              <p class="testi-card__name">Achyut Adhikari</p>
-              <p class="testi-card__role">Founder &mdash; Dairy King</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testi-card" data-reveal data-reveal-delay="2">
-          <div class="testi-card__stars" aria-label="5 stars">
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-          </div>
-          <p class="testi-card__text">"Efficient communication and quality development services."</p>
-          <div class="testi-card__meta">
-            <div class="testi-card__avatar" aria-hidden="true">YB</div>
-            <div>
-              <p class="testi-card__name">Yubraj Bajgain</p>
-              <p class="testi-card__role">Founder &mdash; PrinceTech</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testi-card" data-reveal data-reveal-delay="3">
-          <div class="testi-card__stars" aria-label="5 stars">
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-            <svg class="icon" width="14" height="14"><use href="#i-star"/></svg>
-          </div>
-          <p class="testi-card__text">"Excellent execution and attention to project requirements."</p>
-          <div class="testi-card__meta">
-            <div class="testi-card__avatar" aria-hidden="true">PP</div>
-            <div>
-              <p class="testi-card__name">Prashant Phuyal</p>
-              <p class="testi-card__role">Co-Founder &mdash; Achievement Education</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- ============ END TESTIMONIALS ============ -->
-
-  <!-- ============ FINAL CTA ============ -->
-  <section class="section section--dark cta" id="cta">
-    <div class="cta__glow" aria-hidden="true"></div>
-    <div class="container cta__inner" data-reveal>
-      <p class="eyebrow eyebrow--dark"><span class="eyebrow__dot"></span>Get Started</p>
-      <h2 class="cta__title">Ready to Transform<br><span class="text-gradient">Your Business?</span></h2>
-      <p class="cta__text">Let's build something remarkable together. Book a free consultation or reach us instantly on WhatsApp.</p>
-      <div class="cta__actions">
-        <a href="schedule.html" class="btn btn--primary btn--lg btn--magnetic">
-          <span>Schedule Consultation</span>
-          <svg class="icon" width="18" height="18"><use href="#i-arrow"/></svg>
-        </a>
-        <a href="https://wa.me/9779745717445" class="btn btn--outline-light btn--lg btn--magnetic" target="_blank" rel="noopener">
-          <svg class="icon" width="18" height="18"><use href="#i-whatsapp"/></svg>
-          <span>Chat on WhatsApp</span>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- ============ END CTA ============ -->
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer" id="contact">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__col footer__col--brand">
-        <a href="#home" class="footer__brand" aria-label="Appstract Development — Home">
+    <!-- ============ NAVBAR ============ -->
+    <header class="nav" id="nav">
+      <div class="nav__inner container">
+        <a
+          href="#home"
+          class="nav__brand"
+          aria-label="Appstract Development — Home"
+        >
           <span class="nav__mark" aria-hidden="true">
-            <img src="assets/img/logo-navy.png" alt="" width="40" height="40" loading="lazy" />
+            <img
+              src="assets/img/logo-navy.png"
+              alt=""
+              width="40"
+              height="40"
+              loading="eager"
+            />
           </span>
           <span class="nav__word">Appstract</span>
         </a>
-        <p class="footer__about">AI-first software development company specializing in custom software, intelligent automation, AI agents, digital growth, and cybersecurity consulting &mdash; for startups and enterprises in Nepal and worldwide.</p>
-        <div class="footer__social">
-          <a href="#" class="social-icon" aria-label="LinkedIn"><svg class="icon" width="18" height="18"><use href="#i-linkedin"/></svg></a>
-          <a href="#" class="social-icon" aria-label="Facebook"><svg class="icon" width="18" height="18"><use href="#i-facebook"/></svg></a>
-          <a href="#" class="social-icon" aria-label="Instagram"><svg class="icon" width="18" height="18"><use href="#i-instagram"/></svg></a>
-          <a href="#" class="social-icon" aria-label="YouTube"><svg class="icon" width="18" height="18"><use href="#i-youtube"/></svg></a>
-          <a href="#" class="social-icon" aria-label="TikTok"><svg class="icon" width="18" height="18"><use href="#i-tiktok"/></svg></a>
-          <a href="#" class="social-icon" aria-label="X"><svg class="icon" width="18" height="18"><use href="#i-x"/></svg></a>
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#home" class="nav__link is-active">Home</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="services.html" class="nav__link">Services</a>
+          <a href="#portfolio" class="nav__link">Review</a>
+          <a href="team.html" class="nav__link">Team</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </nav>
+        <div class="nav__actions">
+          <a
+            href="https://wa.me/9779745717445"
+            class="btn btn--ghost btn--sm"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg class="icon" width="16" height="16">
+              <use href="#i-whatsapp" /></svg
+            ><span>WhatsApp</span>
+          </a>
+          <a href="schedule.html" class="btn btn--primary btn--sm"
+            ><span>Schedule Consultation</span></a
+          >
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <svg class="icon icon--menu" width="22" height="22">
+              <use href="#i-menu" />
+            </svg>
+            <svg class="icon icon--close" width="22" height="22">
+              <use href="#i-close" />
+            </svg>
+          </button>
         </div>
       </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Quick Links</h3>
-        <ul class="footer__links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="#portfolio">Review</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="schedule.html">Schedule Consultation</a></li>
-        </ul>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__body">
+          <nav class="mobile-menu__links" aria-label="Mobile">
+            <a href="#home" class="mobile-menu__link">Home</a>
+            <a href="about.html" class="mobile-menu__link">About</a>
+            <a href="services.html" class="mobile-menu__link">Services</a>
+            <a href="#portfolio" class="mobile-menu__link">Reviews</a>
+            <a href="team.html" class="mobile-menu__link">Team</a>
+            <a href="contact.html" class="mobile-menu__link">Contact</a>
+          </nav>
+          <div class="mobile-menu__actions">
+            <a
+              href="https://wa.me/9779745717445"
+              class="btn btn--ghost btn--block"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon" width="18" height="18">
+                <use href="#i-whatsapp" /></svg
+              ><span>Chat on WhatsApp</span>
+            </a>
+            <a href="schedule.html" class="btn btn--primary btn--block"
+              >Schedule Consultation</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Services</h3>
-        <ul class="footer__links">
-          <li><a href="services.html#software-development">Software Development</a></li>
-          <li><a href="services.html#ai-automation">AI Agents &amp; Automation</a></li>
-          <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
-          <li><a href="services.html#ads-production">Ads Production</a></li>
-          <li><a href="services.html#it-consulting">IT Consulting &amp; Cybersecurity</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h3 class="footer__title">Get in Touch</h3>
-        <ul class="footer__contact">
-          <li><svg class="icon" width="18" height="18"><use href="#i-phone"/></svg><a href="tel:+9779745717445">+977 974 571 7445</a></li>
-          <li><svg class="icon" width="18" height="18"><use href="#i-whatsapp"/></svg><a href="https://wa.me/9779745717445" target="_blank" rel="noopener">WhatsApp Chat</a></li>
-          <li><svg class="icon" width="18" height="18"><use href="#i-mail"/></svg><a href="mailto:info@appstractdev.com">info@appstractdev.com</a></li>
-          <li><svg class="icon" width="18" height="18"><use href="#i-clock"/></svg><span>Sun &ndash; Fri, 10:00 AM &ndash; 6:00 PM (NPT)</span></li>
-          <li><svg class="icon" width="18" height="18"><use href="#i-pin"/></svg><span>Serving Nepal &amp; international clients</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p>&copy; <span id="year">2026</span> Appstract Development Pvt. Ltd. All rights reserved.</p>
-      <div class="footer__legal">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-      </div>
-    </div>
-  </div>
-</footer>
+    </header>
 
-<a href="https://wa.me/9779745717445" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
-  <svg class="icon" width="26" height="26"><use href="#i-whatsapp"/></svg>
-</a>
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="home">
+        <canvas
+          class="hero__canvas"
+          id="heroCanvas"
+          aria-hidden="true"
+        ></canvas>
+        <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+        <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+        <div class="container hero__container">
+          <div class="hero__content">
+            <p class="eyebrow eyebrow--dark" data-reveal>
+              AI-First Software Studio &mdash; Nepal &amp; Worldwide
+            </p>
+            <h1 class="hero__title" data-reveal data-reveal-delay="1">
+              Custom Software,<br />
+              <span class="text-gradient">AI Automation</span>
+              &amp; Growth Solutions.
+            </h1>
+            <p class="hero__subtitle" data-reveal data-reveal-delay="2">
+              We build scalable software, intelligent AI systems, business
+              automation workflows, and digital growth solutions that help
+              startups and enterprises accelerate innovation.
+            </p>
+            <div class="hero__actions" data-reveal data-reveal-delay="3">
+              <a
+                href="schedule.html"
+                class="btn btn--primary btn--lg btn--magnetic"
+              >
+                <span>Schedule Consultation</span>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-arrow" />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/9779745717445"
+                class="btn btn--outline-light btn--lg btn--magnetic"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-whatsapp" />
+                </svg>
+                <span>WhatsApp Now</span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="hero__visual"
+            data-reveal
+            data-reveal-delay="2"
+            aria-hidden="true"
+          >
+            <div class="hero__badge">
+              <img
+                src="assets/img/logo-navy.png"
+                alt=""
+                width="280"
+                height="280"
+                loading="eager"
+              />
+            </div>
+            <div class="hero__orbit hero__orbit--1"></div>
+            <div class="hero__orbit hero__orbit--2"></div>
+            <div class="hero__chip hero__chip--1">
+              <svg class="icon" width="16" height="16">
+                <use href="#i-ai" />
+              </svg>
+              <span>Multi&#8209;agent systems</span>
+            </div>
+            <div class="hero__chip hero__chip--2">
+              <svg class="icon" width="16" height="16">
+                <use href="#i-automation" />
+              </svg>
+              <span>Workflow automation</span>
+            </div>
+            <div class="hero__chip hero__chip--3">
+              <svg class="icon" width="16" height="16">
+                <use href="#i-shield" />
+              </svg>
+              <span>Security&#8209;first builds</span>
+            </div>
+            <div class="hero__chip hero__chip--4">
+              <svg class="icon" width="16" height="16">
+                <use href="#i-shield" />
+              </svg>
+              <span>Fast&#8209;Project Delivery</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ END HERO ============ -->
 
-<script src="js/main.js" defer></script>
-</body>
+      <!-- ============ STATS ============ -->
+      <section class="stats" id="stats" aria-label="Trust statistics">
+        <div class="container">
+          <div class="stats__grid">
+            <div class="stats__item" data-reveal data-reveal-delay="1">
+              <div class="stats__number">
+                <span class="stats__count" data-target="10">0</span
+                ><span class="stats__suffix">+</span>
+              </div>
+              <div class="stats__icon" aria-hidden="true">
+                <svg class="icon" width="22" height="22">
+                  <use href="#i-check" />
+                </svg>
+              </div>
+              <p class="stats__label">Projects Delivered</p>
+            </div>
+            <div class="stats__item" data-reveal data-reveal-delay="2">
+              <div class="stats__number">
+                <span class="stats__count" data-target="10">0</span
+                ><span class="stats__suffix">+</span>
+              </div>
+              <div class="stats__icon" aria-hidden="true">
+                <svg class="icon" width="22" height="22">
+                  <use href="#i-users" />
+                </svg>
+              </div>
+              <p class="stats__label">Happy Clients</p>
+            </div>
+            <div class="stats__item" data-reveal data-reveal-delay="3">
+              <div class="stats__number">
+                <span class="stats__count" data-target="15">0</span
+                ><span class="stats__suffix">+</span>
+              </div>
+              <div class="stats__icon" aria-hidden="true">
+                <svg class="icon" width="22" height="22">
+                  <use href="#i-team" />
+                </svg>
+              </div>
+              <p class="stats__label">Team Members</p>
+            </div>
+            <div class="stats__item" data-reveal data-reveal-delay="3">
+              <div class="stats__number">
+                <span class="stats__count" data-target="5">0</span
+                ><span class="stats__suffix">+</span>
+              </div>
+              <div class="stats__icon" aria-hidden="true">
+                <svg class="icon" width="22" height="22">
+                  <use href="#i-industry" />
+                </svg>
+              </div>
+              <p class="stats__label">Industries Served</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ END STATS ============ -->
+
+      <!-- ============ PARTNERS ============ -->
+      <section class="section section--alt partners" id="partners">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow"><span class="eyebrow__dot"></span>Trusted By</p>
+            <h2 class="section__title">Our Clients &amp; Partners</h2>
+            <p class="section__lead">
+              Businesses across Nepal and beyond trust Appstract to power their
+              digital growth.
+            </p>
+          </div>
+          <div class="partners__grid">
+            <div class="partner-card" data-reveal data-reveal-delay="1">
+              <a
+                href="https://perfecto.com.np"
+                target="_blank"
+                rel="noopener"
+                style="display: contents"
+              >
+                <img
+                  src="assets/img/partners/perfecto.png"
+                  alt="Perfecto"
+                  class="partner-card__logo"
+                  width="72"
+                  height="72"
+                  loading="lazy"
+                />
+                <span class="partner-card__name">Perfecto</span>
+              </a>
+            </div>
+            <div class="partner-card" data-reveal data-reveal-delay="1">
+              <a
+                href="https://vrindavanmb.com"
+                target="_blank"
+                rel="noopener"
+                style="display: contents"
+              >
+                <img
+                  src="assets/img/partners/vrindavan.png"
+                  alt="Vrindavan"
+                  class="partner-card__logo"
+                  width="72"
+                  height="72"
+                  loading="lazy"
+                />
+                <span class="partner-card__name">Vrindavan</span>
+              </a>
+            </div>
+            <div class="partner-card" data-reveal data-reveal-delay="2">
+              <a
+                href="https://princetech.com.np"
+                target="_blank"
+                rel="noopener"
+                style="display: contents"
+              >
+                <img
+                  src="assets/img/partners/princetech.jpeg"
+                  alt="PrinceTech"
+                  class="partner-card__logo"
+                  width="72"
+                  height="72"
+                  loading="lazy"
+                />
+                <span class="partner-card__name">PrinceTech</span>
+              </a>
+            </div>
+            <div class="partner-card" data-reveal data-reveal-delay="2">
+              <a
+                href="https://dairyking.com.np"
+                target="_blank"
+                rel="noopener"
+                style="display: contents"
+              >
+                <img
+                  src="assets/img/partners/dairyking.webp"
+                  alt="Dairy King"
+                  class="partner-card__logo"
+                  width="72"
+                  height="72"
+                  loading="lazy"
+                />
+                <span class="partner-card__name">Dairy King</span>
+              </a>
+            </div>
+            <div class="partner-card" data-reveal data-reveal-delay="3">
+              <a
+                href="https://everestsustainability.com/"
+                target="_blank"
+                rel="noopener"
+                style="display: contents"
+              >
+                <img
+                  src="assets/img/partners/esf.png"
+                  alt="Everest Sustainability"
+                  class="partner-card__logo"
+                  width="72"
+                  height="72"
+                  loading="lazy"
+                />
+                <span class="partner-card__name">Everest Sustainability</span>
+              </a>
+            </div>
+            <div class="partner-card" data-reveal data-reveal-delay="3">
+              <a
+                href="https://achievementeducation.com/"
+                target="_blank"
+                rel="noopener"
+                style="display: contents"
+              >
+                <img
+                  src="assets/img/partners/achivement.png"
+                  alt="Achievement Education"
+                  class="partner-card__logo"
+                  width="72"
+                  height="72"
+                  loading="lazy"
+                />
+                <span class="partner-card__name">Achievement Education</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ END PARTNERS ============ -->
+
+      <!-- ============ WHY CHOOSE APPSTRACT ============ -->
+      <section class="section why" id="why">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">
+              <span class="eyebrow__dot"></span>Why Appstract
+            </p>
+            <h2 class="section__title">
+              Built Different,
+              <span class="text-gradient">Delivered Better</span>
+            </h2>
+            <p class="section__lead">
+              Every decision we make is driven by quality, speed, and your
+              long-term success.
+            </p>
+          </div>
+          <div class="why__grid">
+            <div class="why-card" data-reveal data-reveal-delay="1">
+              <div class="why-card__icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="#i-ai" />
+                </svg>
+              </div>
+              <h3 class="why-card__title">AI-First Development</h3>
+              <p class="why-card__text">
+                Modern AI-powered solutions embedded into every layer of the
+                product we build.
+              </p>
+            </div>
+            <div class="why-card" data-reveal data-reveal-delay="2">
+              <div class="why-card__icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="#i-rocket" />
+                </svg>
+              </div>
+              <h3 class="why-card__title">Rapid Delivery</h3>
+              <p class="why-card__text">
+                Fast execution without compromising quality — we ship on time,
+                every time.
+              </p>
+            </div>
+            <div class="why-card" data-reveal data-reveal-delay="3">
+              <div class="why-card__icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="#i-shield" />
+                </svg>
+              </div>
+              <h3 class="why-card__title">Security-Focused</h3>
+              <p class="why-card__text">
+                Built with cybersecurity best practices from day one, not bolted
+                on later.
+              </p>
+            </div>
+            <div class="why-card" data-reveal data-reveal-delay="1">
+              <div class="why-card__icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="#i-startup" />
+                </svg>
+              </div>
+              <h3 class="why-card__title">Startup Friendly</h3>
+              <p class="why-card__text">
+                Affordable and scalable solutions designed to grow alongside
+                your business.
+              </p>
+            </div>
+            <div class="why-card" data-reveal data-reveal-delay="2">
+              <div class="why-card__icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="#i-automation" />
+                </svg>
+              </div>
+              <h3 class="why-card__title">Automation Experts</h3>
+              <p class="why-card__text">
+                Reduce manual effort and unlock efficiency through intelligent
+                automation workflows.
+              </p>
+            </div>
+            <div class="why-card" data-reveal data-reveal-delay="3">
+              <div class="why-card__icon">
+                <svg class="icon" width="24" height="24">
+                  <use href="#i-globe" />
+                </svg>
+              </div>
+              <h3 class="why-card__title">International Standards</h3>
+              <p class="why-card__text">
+                Global quality, documentation, and support — wherever your
+                business operates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ END WHY ============ -->
+
+      <!-- ============ INDUSTRIES ============ -->
+      <section class="section section--dark industries" id="services">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow eyebrow--dark">
+              <span class="eyebrow__dot"></span>Industries
+            </p>
+            <h2 class="section__title" style="color: var(--on-dark)">
+              We Build For <span class="text-gradient">Every Industry</span>
+            </h2>
+            <p class="section__lead" style="color: var(--on-dark-soft)">
+              We build solutions for businesses across every industry.
+            </p>
+          </div>
+          <div class="industries__grid">
+            <div class="industry-chip" data-reveal data-reveal-delay="1">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-finance" /></svg
+              ><span>Finance</span>
+            </div>
+            <div class="industry-chip" data-reveal data-reveal-delay="1">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-education" /></svg
+              ><span>Education</span>
+            </div>
+            <div class="industry-chip" data-reveal data-reveal-delay="2">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-hospitality" /></svg
+              ><span>Hospitality</span>
+            </div>
+            <div class="industry-chip" data-reveal data-reveal-delay="2">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-agri" /></svg
+              ><span>Agriculture</span>
+            </div>
+            <div class="industry-chip" data-reveal data-reveal-delay="3">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-ngo" /></svg
+              ><span>NGO / INGO</span>
+            </div>
+            <div class="industry-chip" data-reveal data-reveal-delay="1">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-health" /></svg
+              ><span>Healthcare</span>
+            </div>
+            <div class="industry-chip" data-reveal data-reveal-delay="2">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-ecommerce" /></svg
+              ><span>E-commerce</span>
+            </div>
+            <div class="industry-chip" data-reveal data-reveal-delay="3">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-tech" /></svg
+              ><span>Technology</span>
+            </div>
+            <div class="industry-chip" data-reveal data-reveal-delay="1">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-manufacturing" /></svg
+              ><span>Manufacturing</span>
+            </div>
+            <div class="industry-chip" data-reveal data-reveal-delay="2">
+              <svg class="icon" width="20" height="20">
+                <use href="#i-logistics" /></svg
+              ><span>Logistics</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ END INDUSTRIES ============ -->
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="section testimonials-section" id="portfolio">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">
+              <span class="eyebrow__dot"></span>Client Stories
+            </p>
+            <h2 class="section__title">
+              What Our <span class="text-gradient">Clients Say</span>
+            </h2>
+            <p class="section__lead">
+              Real results, real relationships — hear from the businesses we've
+              built for.
+            </p>
+          </div>
+          <div class="testi__grid">
+            <div class="testi-card" data-reveal data-reveal-delay="1">
+              <div class="testi-card__stars" aria-label="5 stars">
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+              </div>
+              <p class="testi-card__text">
+                "Appstract helped us build our digital presence through web
+                development, local SEO, and social media management. The results
+                significantly improved our visibility and business growth."
+              </p>
+              <div class="testi-card__meta">
+                <div class="testi-card__avatar" aria-hidden="true">SU</div>
+                <div>
+                  <p class="testi-card__name">Sagar Upreti</p>
+                  <p class="testi-card__role">
+                    Founder &mdash; Vrindavan Misthanna Bhandar
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-card" data-reveal data-reveal-delay="2">
+              <div class="testi-card__stars" aria-label="5 stars">
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+              </div>
+              <p class="testi-card__text">
+                "Professional development process and excellent support
+                throughout the project."
+              </p>
+              <div class="testi-card__meta">
+                <div class="testi-card__avatar" aria-hidden="true">AG</div>
+                <div>
+                  <p class="testi-card__name">Ashmin Gautam</p>
+                  <p class="testi-card__role">Founder &mdash; Perfecto</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-card" data-reveal data-reveal-delay="3">
+              <div class="testi-card__stars" aria-label="5 stars">
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+              </div>
+              <p class="testi-card__text">
+                "Reliable technology partner with strong technical expertise."
+              </p>
+              <div class="testi-card__meta">
+                <div class="testi-card__avatar" aria-hidden="true">NB</div>
+                <div>
+                  <p class="testi-card__name">Nischal Baniya</p>
+                  <p class="testi-card__role">
+                    Co-Founder &mdash; Everest Sustainability
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-card" data-reveal data-reveal-delay="1">
+              <div class="testi-card__stars" aria-label="5 stars">
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+              </div>
+              <p class="testi-card__text">
+                "Delivered a modern website that reflects our brand
+                professionally."
+              </p>
+              <div class="testi-card__meta">
+                <div class="testi-card__avatar" aria-hidden="true">AA</div>
+                <div>
+                  <p class="testi-card__name">Achyut Adhikari</p>
+                  <p class="testi-card__role">Founder &mdash; Dairy King</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-card" data-reveal data-reveal-delay="2">
+              <div class="testi-card__stars" aria-label="5 stars">
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+              </div>
+              <p class="testi-card__text">
+                "Efficient communication and quality development services."
+              </p>
+              <div class="testi-card__meta">
+                <div class="testi-card__avatar" aria-hidden="true">YB</div>
+                <div>
+                  <p class="testi-card__name">Yubraj Bajgain</p>
+                  <p class="testi-card__role">Founder &mdash; PrinceTech</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-card" data-reveal data-reveal-delay="3">
+              <div class="testi-card__stars" aria-label="5 stars">
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+                <svg class="icon" width="14" height="14">
+                  <use href="#i-star" />
+                </svg>
+              </div>
+              <p class="testi-card__text">
+                "Excellent execution and attention to project requirements."
+              </p>
+              <div class="testi-card__meta">
+                <div class="testi-card__avatar" aria-hidden="true">PP</div>
+                <div>
+                  <p class="testi-card__name">Prashant Phuyal</p>
+                  <p class="testi-card__role">
+                    Co-Founder &mdash; Achievement Education
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ END TESTIMONIALS ============ -->
+
+      <!-- ============ FINAL CTA ============ -->
+      <section class="section section--dark cta" id="cta">
+        <div class="cta__glow" aria-hidden="true"></div>
+        <div class="container cta__inner" data-reveal>
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow__dot"></span>Get Started
+          </p>
+          <h2 class="cta__title">
+            Ready to Transform<br /><span class="text-gradient"
+              >Your Business?</span
+            >
+          </h2>
+          <p class="cta__text">
+            Let's build something remarkable together. Book a free consultation
+            or reach us instantly on WhatsApp.
+          </p>
+          <div class="cta__actions">
+            <a
+              href="schedule.html"
+              class="btn btn--primary btn--lg btn--magnetic"
+            >
+              <span>Schedule Consultation</span>
+              <svg class="icon" width="18" height="18">
+                <use href="#i-arrow" />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/9779745717445"
+              class="btn btn--outline-light btn--lg btn--magnetic"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon" width="18" height="18">
+                <use href="#i-whatsapp" />
+              </svg>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ============ END CTA ============ -->
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col footer__col--brand">
+            <a
+              href="#home"
+              class="footer__brand"
+              aria-label="Appstract Development — Home"
+            >
+              <span class="nav__mark" aria-hidden="true">
+                <img
+                  src="assets/img/logo-navy.png"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
+              </span>
+              <span class="nav__word">Appstract</span>
+            </a>
+            <p class="footer__about">
+              AI-first software development company specializing in custom
+              software, intelligent automation, AI agents, digital growth, and
+              cybersecurity consulting &mdash; for startups and enterprises in
+              Nepal and worldwide.
+            </p>
+            <div class="footer__social">
+              <a href="#" class="social-icon" aria-label="LinkedIn"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-linkedin" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="Facebook"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-facebook" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="Instagram"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-instagram" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="YouTube"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-youtube" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="TikTok"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-tiktok" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="X"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-x" /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__title">Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="#portfolio">Review</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="schedule.html">Schedule Consultation</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__title">Services</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="services.html#software-development"
+                  >Software Development</a
+                >
+              </li>
+              <li>
+                <a href="services.html#ai-automation"
+                  >AI Agents &amp; Automation</a
+                >
+              </li>
+              <li>
+                <a href="services.html#digital-marketing">Digital Marketing</a>
+              </li>
+              <li><a href="services.html#ads-production">Ads Production</a></li>
+              <li>
+                <a href="services.html#it-consulting"
+                  >IT Consulting &amp; Cybersecurity</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__title">Get in Touch</h3>
+            <ul class="footer__contact">
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-phone" /></svg
+                ><a href="tel:+9779745717445">+977 974 571 7445</a>
+              </li>
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-whatsapp" /></svg
+                ><a
+                  href="https://wa.me/9779745717445"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp Chat</a
+                >
+              </li>
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-mail" /></svg
+                ><a href="mailto:info@appstractdev.com"
+                  >info@appstractdev.com</a
+                >
+              </li>
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-clock" /></svg
+                ><span>Sun &ndash; Fri, 10:00 AM &ndash; 6:00 PM (NPT)</span>
+              </li>
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-pin" /></svg
+                ><span>Serving Nepal &amp; international clients</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            &copy; <span id="year">2026</span> Appstract Development Pvt. Ltd.
+            All rights reserved.
+          </p>
+          <div class="footer__legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/9779745717445"
+      class="fab-whatsapp"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <svg class="icon" width="26" height="26"><use href="#i-whatsapp" /></svg>
+    </a>
+
+    <script src="js/main.js" defer></script>
+  </body>
 </html>

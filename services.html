@@ -1,455 +1,1139 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services | Appstract Development</title>
-    <meta name="description" content="Explore Appstract's full range of services — custom software, AI automation, digital marketing, ads production, and IT consulting & cybersecurity." />
+    <meta
+      name="description"
+      content="Explore Appstract's full range of services — custom software, AI automation, digital marketing, ads production, and IT consulting & cybersecurity."
+    />
     <link rel="canonical" href="https://appstractdev.com/services.html" />
     <link rel="icon" type="image/png" href="assets/img/logo-black.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/services.css" />
-    </head>
-    <body>
-
+  </head>
+  <body>
     <!-- ICON SPRITE -->
-    <svg class="icon-sprite" aria-hidden="true" focusable="false"><defs>
-    <symbol id="i-code" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-ai" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke-linecap="round"/><circle cx="12" cy="12" r="4"/></symbol>
-    <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h1l2 4h2l-1-4h8l2 2V7l-2 2H8L6 7H4a1 1 0 0 0-1 1v1" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 9v6" stroke-linecap="round"/></symbol>
-    <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3V10Z" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m8.5 12 2.3 2.3L16 9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-star-pkg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor" stroke="none"/></symbol>
-    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.1.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.1-.2 0-.4.1-.5.2-.2.4-.5.6-.7.2-.2.2-.4.1-.6-.1-.3-.7-1.6-.9-2.1-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.1 3 .1.2 1.9 3 4.7 4.2 2.3 1 2.8.8 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.2-.2-.4-.2Z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></symbol>
-    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke-linecap="round"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
-    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10v6.5M7.5 7.5v.01M11 16.5V12c0-1.2.8-2 2-2s2 .8 2 2v4.5M11 12v4.5" stroke-linecap="round"/></symbol>
-    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 21v-7h2.3l.4-3H14V9c0-.9.3-1.5 1.6-1.5H17V4.8c-.7-.1-1.6-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2V11H8v3h2.5v7H14Z"/></symbol>
-    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></symbol>
-    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="3"/><path d="m10.5 9.5 4 2.5-4 2.5Z"/></symbol>
-    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5h.7M14 3c.3 2.4 1.9 4.2 4.3 4.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-x" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20" stroke-linecap="round"/></symbol>
-    </defs></svg>
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="i-code" viewBox="0 0 24 24">
+          <path
+            d="M16 18l6-6-6-6M8 6l-6 6 6 6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-ai" viewBox="0 0 24 24">
+          <path
+            d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+            stroke-linecap="round"
+          />
+          <circle cx="12" cy="12" r="4" />
+        </symbol>
+        <symbol id="i-megaphone" viewBox="0 0 24 24">
+          <path
+            d="M3 11v2a1 1 0 0 0 1 1h1l2 4h2l-1-4h8l2 2V7l-2 2H8L6 7H4a1 1 0 0 0-1 1v1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path d="M19 9v6" stroke-linecap="round" />
+        </symbol>
+        <symbol id="i-video" viewBox="0 0 24 24">
+          <rect x="2" y="6" width="14" height="12" rx="2" />
+          <path
+            d="m16 10 5-3v10l-5-3V10Z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24">
+          <path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z" />
+          <path
+            d="m8.5 12 2.3 2.3L16 9"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-check-circle" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <path
+            d="m9 12 2 2 4-4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-chevron-down" viewBox="0 0 24 24">
+          <path
+            d="M6 9l6 6 6-6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path
+            d="M5 12h14M13 6l6 6-6 6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-star-pkg" viewBox="0 0 24 24">
+          <polygon
+            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            fill="currentColor"
+            stroke="none"
+          />
+        </symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 24 24">
+          <path
+            d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.1.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.1-.2 0-.4.1-.5.2-.2.4-.5.6-.7.2-.2.2-.4.1-.6-.1-.3-.7-1.6-.9-2.1-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.1 3 .1.2 1.9 3 4.7 4.2 2.3 1 2.8.8 3.3.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.2-.2-.4-.2Z"
+          />
+          <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z" />
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24">
+          <path d="M6 6l12 12M18 6 6 18" stroke-linecap="round" />
+        </symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24">
+          <path
+            d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"
+          />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path
+            d="m4 7 8 6 8-6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path
+            d="M12 7v5l3 3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24">
+          <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z" />
+          <circle cx="12" cy="10" r="2.5" />
+        </symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="3" />
+          <path
+            d="M7.5 10v6.5M7.5 7.5v.01M11 16.5V12c0-1.2.8-2 2-2s2 .8 2 2v4.5M11 12v4.5"
+            stroke-linecap="round"
+          />
+        </symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24">
+          <path
+            d="M14 21v-7h2.3l.4-3H14V9c0-.9.3-1.5 1.6-1.5H17V4.8c-.7-.1-1.6-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2V11H8v3h2.5v7H14Z"
+          />
+        </symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.2" cy="6.8" r="1" />
+        </symbol>
+        <symbol id="i-youtube" viewBox="0 0 24 24">
+          <rect x="2.5" y="5.5" width="19" height="13" rx="3" />
+          <path d="m10.5 9.5 4 2.5-4 2.5Z" />
+        </symbol>
+        <symbol id="i-tiktok" viewBox="0 0 24 24">
+          <path
+            d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5h.7M14 3c.3 2.4 1.9 4.2 4.3 4.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+        <symbol id="i-x" viewBox="0 0 24 24">
+          <path d="M4 4l16 16M20 4 4 20" stroke-linecap="round" />
+        </symbol>
+      </defs>
+    </svg>
 
     <a class="skip-link" href="#main">Skip to content</a>
 
     <!-- NAVBAR -->
     <header class="nav" id="nav">
-    <div class="nav__inner container">
+      <div class="nav__inner container">
         <a href="index.html" class="nav__brand">
-        <span class="nav__mark"><img src="assets/img/logo-navy.png" alt="" width="40" height="40" loading="eager" /></span>
-        <span class="nav__word">Appstract</span>
+          <span class="nav__mark"
+            ><img
+              src="assets/img/logo-navy.png"
+              alt=""
+              width="40"
+              height="40"
+              loading="eager"
+          /></span>
+          <span class="nav__word">Appstract</span>
         </a>
         <nav class="nav__links" aria-label="Primary">
-        <a href="index.html#home" class="nav__link">Home</a>
-        <a href="about.html" class="nav__link">About</a>
-        <a href="services.html" class="nav__link is-active">Services</a>
-        <a href="index.html#portfolio" class="nav__link">Review</a>
-        <a href="team.html" class="nav__link">Team</a>
-        <a href="index.html#contact" class="nav__link">Contact</a>
+          <a href="index.html#home" class="nav__link">Home</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="services.html" class="nav__link is-active">Services</a>
+          <a href="index.html#portfolio" class="nav__link">Review</a>
+          <a href="team.html" class="nav__link">Team</a>
+          <a href="contact.html" class="nav__link">Contact</a>
         </nav>
         <div class="nav__actions">
-        <a href="https://wa.me/9779745717445" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">
-            <svg class="icon" width="16" height="16"><use href="#i-whatsapp"/></svg><span>WhatsApp</span>
-        </a>
-        <a href="schedule.html" class="btn btn--primary btn--sm">Schedule Consultation</a>
-        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-            <svg class="icon icon--menu" width="22" height="22"><use href="#i-menu"/></svg>
-            <svg class="icon icon--close" width="22" height="22"><use href="#i-close"/></svg>
-        </button>
+          <a
+            href="https://wa.me/9779745717445"
+            class="btn btn--ghost btn--sm"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg class="icon" width="16" height="16">
+              <use href="#i-whatsapp" /></svg
+            ><span>WhatsApp</span>
+          </a>
+          <a href="schedule.html" class="btn btn--primary btn--sm"
+            >Schedule Consultation</a
+          >
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <svg class="icon icon--menu" width="22" height="22">
+              <use href="#i-menu" />
+            </svg>
+            <svg class="icon icon--close" width="22" height="22">
+              <use href="#i-close" />
+            </svg>
+          </button>
         </div>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu__body">
-        <nav class="mobile-menu__links" aria-label="Mobile">
+          <nav class="mobile-menu__links" aria-label="Mobile">
             <a href="index.html#home" class="mobile-menu__link">Home</a>
             <a href="about.html" class="mobile-menu__link">About</a>
             <a href="services.html" class="mobile-menu__link">Services</a>
             <a href="index.html#portfolio" class="mobile-menu__link">Review</a>
             <a href="team.html" class="mobile-menu__link">Team</a>
-            <a href="index.html#contact" class="mobile-menu__link">Contact</a>
-        </nav>
-        <div class="mobile-menu__actions">
-            <a href="https://wa.me/9779745717445" class="btn btn--ghost btn--block" target="_blank" rel="noopener">
-            <svg class="icon" width="18" height="18"><use href="#i-whatsapp"/></svg><span>Chat on WhatsApp</span>
+            <a href="contact.html" class="mobile-menu__link">Contact</a>
+          </nav>
+          <div class="mobile-menu__actions">
+            <a
+              href="https://wa.me/9779745717445"
+              class="btn btn--ghost btn--block"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon" width="18" height="18">
+                <use href="#i-whatsapp" /></svg
+              ><span>Chat on WhatsApp</span>
             </a>
-            <a href="schedule.html" class="btn btn--primary btn--block">Schedule Consultation</a>
+            <a href="schedule.html" class="btn btn--primary btn--block"
+              >Schedule Consultation</a
+            >
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
     </header>
 
     <main id="main">
-
-    <!-- PAGE HERO -->
-    <section class="svc-hero">
+      <!-- PAGE HERO -->
+      <section class="svc-hero">
         <div class="svc-hero__glow svc-hero__glow--a" aria-hidden="true"></div>
         <div class="svc-hero__glow svc-hero__glow--b" aria-hidden="true"></div>
         <div class="container svc-hero__inner">
-        <p class="eyebrow eyebrow--dark" data-reveal><span class="eyebrow__dot"></span>What We Do</p>
-        <h1 class="svc-hero__title" data-reveal data-reveal-delay="1">
-            Services Built for the<br><span class="text-gradient">AI Era</span>
-        </h1>
-        <p class="svc-hero__lead" data-reveal data-reveal-delay="2">From custom software to intelligent automation — we deliver end-to-end technology solutions that help businesses grow faster and smarter.</p>
+          <p class="eyebrow eyebrow--dark" data-reveal>
+            <span class="eyebrow__dot"></span>What We Do
+          </p>
+          <h1 class="svc-hero__title" data-reveal data-reveal-delay="1">
+            Services Built for the<br /><span class="text-gradient"
+              >AI Era</span
+            >
+          </h1>
+          <p class="svc-hero__lead" data-reveal data-reveal-delay="2">
+            From custom software to intelligent automation — we deliver
+            end-to-end technology solutions that help businesses grow faster and
+            smarter.
+          </p>
         </div>
-    </section>
+      </section>
 
-    <!-- SERVICES ACCORDION CARDS -->
-    <section class="section svc-section" id="services">
-    <div class="container">
-        <div class="section__head" data-reveal>
-        <p class="eyebrow"><span class="eyebrow__dot"></span>Our Services</p>
-        <h2 class="section__title">Everything You Need to <span class="text-gradient">Scale</span></h2>
-        <p class="section__lead">Click any service to explore what we deliver.</p>
-        </div>
-
-        <div class="svc-layout">
-
-        <div class="svc-list" id="svcList">
-
-            <!-- Service 1 -->
-            <div class="svc-card" id="svc-software" data-reveal data-reveal-delay="1">
-            <button class="svc-card__trigger" aria-expanded="false" aria-controls="svc-software-panel">
-                <div class="svc-card__icon"><svg class="icon" width="26" height="26"><use href="#i-code"/></svg></div>
-                <div class="svc-card__meta">
-                <span class="svc-card__title">Software Development</span>
-                <span class="svc-card__tagline">Custom platforms, apps &amp; enterprise systems</span>
-                </div>
-                <svg class="icon svc-card__chevron" width="22" height="22"><use href="#i-chevron-down"/></svg>
-            </button>
-            <div class="svc-card__panel" id="svc-software-panel">
-                <div class="svc-card__inner">
-                <ul class="svc-card__list">
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Custom Web Applications</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Mobile Applications</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>SaaS Platforms</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Enterprise Systems</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>ERP Solutions</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>CRM Systems</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Inventory Management Systems</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Business Management Platforms</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Customer Portals</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Internal Business Tools</li>
-                </ul>
-                </div>
-            </div>
-            </div>
-
-            <!-- Service 2 -->
-            <div class="svc-card" id="svc-ai" data-reveal data-reveal-delay="2">
-            <button class="svc-card__trigger" aria-expanded="false" aria-controls="svc-ai-panel">
-                <div class="svc-card__icon svc-card__icon--ai"><svg class="icon" width="26" height="26"><use href="#i-ai"/></svg></div>
-                <div class="svc-card__meta">
-                <span class="svc-card__title">AI Agents &amp; Automation</span>
-                <span class="svc-card__tagline">Intelligent systems that work while you sleep</span>
-                </div>
-                <svg class="icon svc-card__chevron" width="22" height="22"><use href="#i-chevron-down"/></svg>
-            </button>
-            <div class="svc-card__panel" id="svc-ai-panel">
-                <div class="svc-card__inner">
-                <ul class="svc-card__list">
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>AI Agents</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Multi-Agent Systems</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Workflow Automation</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>AI Integrations</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>CRM Automation</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Business Process Automation</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>AI Knowledge Bases</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Data Scraping Systems</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>AI Chatbots</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>AI Voice Agents</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Custom AI Models</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Microservice Automation</li>
-                </ul>
-                </div>
-            </div>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="svc-card" id="svc-marketing" data-reveal data-reveal-delay="3">
-            <button class="svc-card__trigger" aria-expanded="false" aria-controls="svc-marketing-panel">
-                <div class="svc-card__icon svc-card__icon--mkt"><svg class="icon" width="26" height="26"><use href="#i-megaphone"/></svg></div>
-                <div class="svc-card__meta">
-                <span class="svc-card__title">Digital Marketing</span>
-                <span class="svc-card__tagline">Performance-driven growth across every channel</span>
-                </div>
-                <svg class="icon svc-card__chevron" width="22" height="22"><use href="#i-chevron-down"/></svg>
-            </button>
-            <div class="svc-card__panel" id="svc-marketing-panel">
-                <div class="svc-card__inner">
-                <ul class="svc-card__list">
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Performance Marketing</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Google Ads</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Meta Ads</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Social Media Marketing</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>SEO</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Conversion Optimization</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Lead Generation Campaigns</li>
-                </ul>
-                </div>
-            </div>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="svc-card" id="svc-ads" data-reveal data-reveal-delay="1">
-            <button class="svc-card__trigger" aria-expanded="false" aria-controls="svc-ads-panel">
-                <div class="svc-card__icon svc-card__icon--ads"><svg class="icon" width="26" height="26"><use href="#i-video"/></svg></div>
-                <div class="svc-card__meta">
-                <span class="svc-card__title">Ads Production</span>
-                <span class="svc-card__tagline">Visuals &amp; creatives that convert</span>
-                </div>
-                <svg class="icon svc-card__chevron" width="22" height="22"><use href="#i-chevron-down"/></svg>
-            </button>
-            <div class="svc-card__panel" id="svc-ads-panel">
-                <div class="svc-card__inner">
-                <ul class="svc-card__list">
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Promotional Videos</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Product Ads</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Commercial Ads</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Social Media Reels</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Motion Graphics</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Marketing Creatives</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Brand Campaign Assets</li>
-                </ul>
-                </div>
-            </div>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="svc-card" id="svc-security" data-reveal data-reveal-delay="2">
-            <button class="svc-card__trigger" aria-expanded="false" aria-controls="svc-security-panel">
-                <div class="svc-card__icon svc-card__icon--sec"><svg class="icon" width="26" height="26"><use href="#i-shield"/></svg></div>
-                <div class="svc-card__meta">
-                <span class="svc-card__title">IT Consulting &amp; Cybersecurity</span>
-                <span class="svc-card__tagline">Secure, compliant &amp; future-ready systems</span>
-                </div>
-                <svg class="icon svc-card__chevron" width="22" height="22"><use href="#i-chevron-down"/></svg>
-            </button>
-            <div class="svc-card__panel" id="svc-security-panel">
-                <div class="svc-card__inner">
-                <ul class="svc-card__list">
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Technology Consulting</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Digital Transformation Consulting</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>VAPT</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Security Assessments</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Web Security Audits</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Network Security Audits</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Cloud Security Reviews</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Compliance Readiness</li>
-                    <li><svg class="icon" width="16" height="16"><use href="#i-check-circle"/></svg>Security Consulting</li>
-                </ul>
-                </div>
-            </div>
-            </div>
-
-        </div><!-- end .svc-list -->
-
-        <div class="svc-calendly">
-            <div class="svc-calendly__head">
-            <h3 class="svc-calendly__title">Schedule a Free<br><span class="text-gradient">Consultation</span></h3>
-            <p class="svc-calendly__sub">Pick a time that works for you — no obligations.</p>
-            </div>
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/yaduupreti8/30min" style="min-width:320px;height:660px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
-        </div><!-- end .svc-calendly -->
-
-        </div><!-- end .svc-layout -->
-    </div>
-    </section>
-
-    <!-- PACKAGES -->
-    <section class="section section--alt pkg-section" id="packages">
+      <!-- SERVICES ACCORDION CARDS -->
+      <section class="section svc-section" id="services">
         <div class="container">
-        <div class="section__head" data-reveal>
+          <div class="section__head" data-reveal>
+            <p class="eyebrow">
+              <span class="eyebrow__dot"></span>Our Services
+            </p>
+            <h2 class="section__title">
+              Everything You Need to <span class="text-gradient">Scale</span>
+            </h2>
+            <p class="section__lead">
+              Click any service to explore what we deliver.
+            </p>
+          </div>
+
+          <div class="svc-layout">
+            <div class="svc-list" id="svcList">
+              <!-- Service 1 -->
+              <div
+                class="svc-card"
+                id="svc-software"
+                data-reveal
+                data-reveal-delay="1"
+              >
+                <button
+                  class="svc-card__trigger"
+                  aria-expanded="false"
+                  aria-controls="svc-software-panel"
+                >
+                  <div class="svc-card__icon">
+                    <svg class="icon" width="26" height="26">
+                      <use href="#i-code" />
+                    </svg>
+                  </div>
+                  <div class="svc-card__meta">
+                    <span class="svc-card__title">Software Development</span>
+                    <span class="svc-card__tagline"
+                      >Custom platforms, apps &amp; enterprise systems</span
+                    >
+                  </div>
+                  <svg class="icon svc-card__chevron" width="22" height="22">
+                    <use href="#i-chevron-down" />
+                  </svg>
+                </button>
+                <div class="svc-card__panel" id="svc-software-panel">
+                  <div class="svc-card__inner">
+                    <ul class="svc-card__list">
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Custom Web Applications
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Mobile Applications
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >SaaS Platforms
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Enterprise Systems
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >ERP Solutions
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >CRM Systems
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Inventory Management Systems
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Business Management Platforms
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Customer Portals
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Internal Business Tools
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service 2 -->
+              <div
+                class="svc-card"
+                id="svc-ai"
+                data-reveal
+                data-reveal-delay="2"
+              >
+                <button
+                  class="svc-card__trigger"
+                  aria-expanded="false"
+                  aria-controls="svc-ai-panel"
+                >
+                  <div class="svc-card__icon svc-card__icon--ai">
+                    <svg class="icon" width="26" height="26">
+                      <use href="#i-ai" />
+                    </svg>
+                  </div>
+                  <div class="svc-card__meta">
+                    <span class="svc-card__title"
+                      >AI Agents &amp; Automation</span
+                    >
+                    <span class="svc-card__tagline"
+                      >Intelligent systems that work while you sleep</span
+                    >
+                  </div>
+                  <svg class="icon svc-card__chevron" width="22" height="22">
+                    <use href="#i-chevron-down" />
+                  </svg>
+                </button>
+                <div class="svc-card__panel" id="svc-ai-panel">
+                  <div class="svc-card__inner">
+                    <ul class="svc-card__list">
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >AI Agents
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Multi-Agent Systems
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Workflow Automation
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >AI Integrations
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >CRM Automation
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Business Process Automation
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >AI Knowledge Bases
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Data Scraping Systems
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >AI Chatbots
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >AI Voice Agents
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Custom AI Models
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Microservice Automation
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service 3 -->
+              <div
+                class="svc-card"
+                id="svc-marketing"
+                data-reveal
+                data-reveal-delay="3"
+              >
+                <button
+                  class="svc-card__trigger"
+                  aria-expanded="false"
+                  aria-controls="svc-marketing-panel"
+                >
+                  <div class="svc-card__icon svc-card__icon--mkt">
+                    <svg class="icon" width="26" height="26">
+                      <use href="#i-megaphone" />
+                    </svg>
+                  </div>
+                  <div class="svc-card__meta">
+                    <span class="svc-card__title">Digital Marketing</span>
+                    <span class="svc-card__tagline"
+                      >Performance-driven growth across every channel</span
+                    >
+                  </div>
+                  <svg class="icon svc-card__chevron" width="22" height="22">
+                    <use href="#i-chevron-down" />
+                  </svg>
+                </button>
+                <div class="svc-card__panel" id="svc-marketing-panel">
+                  <div class="svc-card__inner">
+                    <ul class="svc-card__list">
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Performance Marketing
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Google Ads
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Meta Ads
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Social Media Marketing
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >SEO
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Conversion Optimization
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Lead Generation Campaigns
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service 4 -->
+              <div
+                class="svc-card"
+                id="svc-ads"
+                data-reveal
+                data-reveal-delay="1"
+              >
+                <button
+                  class="svc-card__trigger"
+                  aria-expanded="false"
+                  aria-controls="svc-ads-panel"
+                >
+                  <div class="svc-card__icon svc-card__icon--ads">
+                    <svg class="icon" width="26" height="26">
+                      <use href="#i-video" />
+                    </svg>
+                  </div>
+                  <div class="svc-card__meta">
+                    <span class="svc-card__title">Ads Production</span>
+                    <span class="svc-card__tagline"
+                      >Visuals &amp; creatives that convert</span
+                    >
+                  </div>
+                  <svg class="icon svc-card__chevron" width="22" height="22">
+                    <use href="#i-chevron-down" />
+                  </svg>
+                </button>
+                <div class="svc-card__panel" id="svc-ads-panel">
+                  <div class="svc-card__inner">
+                    <ul class="svc-card__list">
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Promotional Videos
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Product Ads
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Commercial Ads
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Social Media Reels
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Motion Graphics
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Marketing Creatives
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Brand Campaign Assets
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service 5 -->
+              <div
+                class="svc-card"
+                id="svc-security"
+                data-reveal
+                data-reveal-delay="2"
+              >
+                <button
+                  class="svc-card__trigger"
+                  aria-expanded="false"
+                  aria-controls="svc-security-panel"
+                >
+                  <div class="svc-card__icon svc-card__icon--sec">
+                    <svg class="icon" width="26" height="26">
+                      <use href="#i-shield" />
+                    </svg>
+                  </div>
+                  <div class="svc-card__meta">
+                    <span class="svc-card__title"
+                      >IT Consulting &amp; Cybersecurity</span
+                    >
+                    <span class="svc-card__tagline"
+                      >Secure, compliant &amp; future-ready systems</span
+                    >
+                  </div>
+                  <svg class="icon svc-card__chevron" width="22" height="22">
+                    <use href="#i-chevron-down" />
+                  </svg>
+                </button>
+                <div class="svc-card__panel" id="svc-security-panel">
+                  <div class="svc-card__inner">
+                    <ul class="svc-card__list">
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Technology Consulting
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Digital Transformation Consulting
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >VAPT
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Security Assessments
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Web Security Audits
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Network Security Audits
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Cloud Security Reviews
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Compliance Readiness
+                      </li>
+                      <li>
+                        <svg class="icon" width="16" height="16">
+                          <use href="#i-check-circle" /></svg
+                        >Security Consulting
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end .svc-list -->
+
+            <div class="svc-calendly">
+              <div class="svc-calendly__head">
+                <h3 class="svc-calendly__title">
+                  Schedule a Free<br /><span class="text-gradient"
+                    >Consultation</span
+                  >
+                </h3>
+                <p class="svc-calendly__sub">
+                  Pick a time that works for you — no obligations.
+                </p>
+              </div>
+              <!-- Calendly inline widget begin -->
+              <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/yaduupreti8/30min"
+                style="min-width: 320px; height: 660px"
+              ></div>
+              <script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              ></script>
+              <!-- Calendly inline widget end -->
+            </div>
+            <!-- end .svc-calendly -->
+          </div>
+          <!-- end .svc-layout -->
+        </div>
+      </section>
+
+      <!-- PACKAGES -->
+      <section class="section section--alt pkg-section" id="packages">
+        <div class="container">
+          <div class="section__head" data-reveal>
             <p class="eyebrow"><span class="eyebrow__dot"></span>Packages</p>
-            <h2 class="section__title">Find the Right <span class="text-gradient">Package</span></h2>
-            <p class="section__lead">Tailored bundles for every stage of growth. Contact us for custom pricing.</p>
-        </div>
-        <div class="pkg-grid">
-
+            <h2 class="section__title">
+              Find the Right <span class="text-gradient">Package</span>
+            </h2>
+            <p class="section__lead">
+              Tailored bundles for every stage of growth. Contact us for custom
+              pricing.
+            </p>
+          </div>
+          <div class="pkg-grid">
             <div class="pkg-card" data-reveal data-reveal-delay="1">
-            <div class="pkg-card__top">
-                <div class="pkg-card__icon"><svg class="icon" width="22" height="22"><use href="#i-star-pkg"/></svg></div>
+              <div class="pkg-card__top">
+                <div class="pkg-card__icon">
+                  <svg class="icon" width="22" height="22">
+                    <use href="#i-star-pkg" />
+                  </svg>
+                </div>
                 <h3 class="pkg-card__name">Startup</h3>
-                <p class="pkg-card__desc">Everything a new business needs to establish a strong digital presence.</p>
-            </div>
-            <ul class="pkg-card__list">
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Business Website</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Basic SEO Setup</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Hosting Setup</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Analytics</li>
-            </ul>
-            <a href="schedule.html" class="btn btn--outline-dark btn--block">Get Started</a>
+                <p class="pkg-card__desc">
+                  Everything a new business needs to establish a strong digital
+                  presence.
+                </p>
+              </div>
+              <ul class="pkg-card__list">
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Business Website
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Basic SEO Setup
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Hosting Setup
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Analytics
+                </li>
+              </ul>
+              <a href="schedule.html" class="btn btn--outline-dark btn--block"
+                >Get Started</a
+              >
             </div>
 
             <div class="pkg-card" data-reveal data-reveal-delay="2">
-            <div class="pkg-card__top">
-                <div class="pkg-card__icon pkg-card__icon--2"><svg class="icon" width="22" height="22"><use href="#i-star-pkg"/></svg></div>
+              <div class="pkg-card__top">
+                <div class="pkg-card__icon pkg-card__icon--2">
+                  <svg class="icon" width="22" height="22">
+                    <use href="#i-star-pkg" />
+                  </svg>
+                </div>
                 <h3 class="pkg-card__name">Growth</h3>
-                <p class="pkg-card__desc">For businesses ready to scale with custom tech and automation.</p>
-            </div>
-            <ul class="pkg-card__list">
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Custom Web Application</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>CRM Integration</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Automation Setup</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Enhanced SEO</li>
-            </ul>
-            <a href="schedule.html" class="btn btn--outline-dark btn--block">Get Started</a>
+                <p class="pkg-card__desc">
+                  For businesses ready to scale with custom tech and automation.
+                </p>
+              </div>
+              <ul class="pkg-card__list">
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Custom Web Application
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >CRM Integration
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Automation Setup
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Enhanced SEO
+                </li>
+              </ul>
+              <a href="schedule.html" class="btn btn--outline-dark btn--block"
+                >Get Started</a
+              >
             </div>
 
-            <div class="pkg-card pkg-card--featured" data-reveal data-reveal-delay="3">
-            <div class="pkg-card__badge">Popular</div>
-            <div class="pkg-card__top">
-                <div class="pkg-card__icon pkg-card__icon--featured"><svg class="icon" width="22" height="22"><use href="#i-star-pkg"/></svg></div>
+            <div
+              class="pkg-card pkg-card--featured"
+              data-reveal
+              data-reveal-delay="3"
+            >
+              <div class="pkg-card__badge">Popular</div>
+              <div class="pkg-card__top">
+                <div class="pkg-card__icon pkg-card__icon--featured">
+                  <svg class="icon" width="22" height="22">
+                    <use href="#i-star-pkg" />
+                  </svg>
+                </div>
                 <h3 class="pkg-card__name">Marketing</h3>
-                <p class="pkg-card__desc">Full-funnel marketing to drive leads, traffic, and conversions.</p>
-            </div>
-            <ul class="pkg-card__list">
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Social Media Management</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Google Ads</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Meta Ads</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Creative Production</li>
-            </ul>
-            <a href="schedule.html" class="btn btn--primary btn--block">Get Started</a>
+                <p class="pkg-card__desc">
+                  Full-funnel marketing to drive leads, traffic, and
+                  conversions.
+                </p>
+              </div>
+              <ul class="pkg-card__list">
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Social Media Management
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Google Ads
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Meta Ads
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Creative Production
+                </li>
+              </ul>
+              <a href="schedule.html" class="btn btn--primary btn--block"
+                >Get Started</a
+              >
             </div>
 
             <div class="pkg-card" data-reveal data-reveal-delay="1">
-            <div class="pkg-card__badge">Popular</div>
-            <div class="pkg-card__top">
-                <div class="pkg-card__icon pkg-card__icon--4"><svg class="icon" width="22" height="22"><use href="#i-ai"/></svg></div>
+              <div class="pkg-card__badge">Popular</div>
+              <div class="pkg-card__top">
+                <div class="pkg-card__icon pkg-card__icon--4">
+                  <svg class="icon" width="22" height="22">
+                    <use href="#i-ai" />
+                  </svg>
+                </div>
                 <h3 class="pkg-card__name">AI Automation</h3>
-                <p class="pkg-card__desc">Intelligent systems that automate workflows and integrate seamlessly.</p>
-            </div>
-            <ul class="pkg-card__list">
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>AI Agent Development</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Workflow Automation</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>CRM Automation</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Custom Integrations</li>
-            </ul>
-            <a href="schedule.html" class="btn btn--outline-dark btn--block">Get Started</a>
+                <p class="pkg-card__desc">
+                  Intelligent systems that automate workflows and integrate
+                  seamlessly.
+                </p>
+              </div>
+              <ul class="pkg-card__list">
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >AI Agent Development
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Workflow Automation
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >CRM Automation
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Custom Integrations
+                </li>
+              </ul>
+              <a href="schedule.html" class="btn btn--outline-dark btn--block"
+                >Get Started</a
+              >
             </div>
 
             <div class="pkg-card" data-reveal data-reveal-delay="2">
-            <div class="pkg-card__top">
-                <div class="pkg-card__icon pkg-card__icon--5"><svg class="icon" width="22" height="22"><use href="#i-shield"/></svg></div>
+              <div class="pkg-card__top">
+                <div class="pkg-card__icon pkg-card__icon--5">
+                  <svg class="icon" width="22" height="22">
+                    <use href="#i-shield" />
+                  </svg>
+                </div>
                 <h3 class="pkg-card__name">Enterprise</h3>
-                <p class="pkg-card__desc">Large-scale systems with a dedicated team, AI, and full security coverage.</p>
+                <p class="pkg-card__desc">
+                  Large-scale systems with a dedicated team, AI, and full
+                  security coverage.
+                </p>
+              </div>
+              <ul class="pkg-card__list">
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Large Scale Software Development
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Dedicated Team
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >AI Systems
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Security Audits
+                </li>
+                <li>
+                  <svg class="icon" width="15" height="15">
+                    <use href="#i-check-circle" /></svg
+                  >Priority Support
+                </li>
+              </ul>
+              <a href="schedule.html" class="btn btn--outline-dark btn--block"
+                >Contact Us</a
+              >
             </div>
-            <ul class="pkg-card__list">
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Large Scale Software Development</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Dedicated Team</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>AI Systems</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Security Audits</li>
-                <li><svg class="icon" width="15" height="15"><use href="#i-check-circle"/></svg>Priority Support</li>
-            </ul>
-            <a href="schedule.html" class="btn btn--outline-dark btn--block">Contact Us</a>
-            </div>
-
+          </div>
+          <p class="pkg-note" data-reveal>
+            No public pricing — every engagement is custom-scoped.
+            <a href="schedule.html">Book a free consultation</a> to get a
+            tailored quote.
+          </p>
         </div>
-        <p class="pkg-note" data-reveal>No public pricing — every engagement is custom-scoped. <a href="schedule.html">Book a free consultation</a> to get a tailored quote.</p>
-        </div>
-    </section>
+      </section>
 
-    <!-- FINAL CTA -->
-    <section class="section section--dark cta" id="cta">
+      <!-- FINAL CTA -->
+      <section class="section section--dark cta" id="cta">
         <div class="cta__glow" aria-hidden="true"></div>
         <div class="container cta__inner" data-reveal>
-        <p class="eyebrow eyebrow--dark"><span class="eyebrow__dot"></span>Get Started</p>
-        <h2 class="cta__title">Ready to Transform<br><span class="text-gradient">Your Business?</span></h2>
-        <p class="cta__text">Let's build something remarkable together. Book a free consultation or reach us instantly on WhatsApp.</p>
-        <div class="cta__actions">
-            <a href="schedule.html" class="btn btn--primary btn--lg btn--magnetic">
-            <span>Schedule Consultation</span>
-            <svg class="icon" width="18" height="18"><use href="#i-arrow"/></svg>
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow__dot"></span>Get Started
+          </p>
+          <h2 class="cta__title">
+            Ready to Transform<br /><span class="text-gradient"
+              >Your Business?</span
+            >
+          </h2>
+          <p class="cta__text">
+            Let's build something remarkable together. Book a free consultation
+            or reach us instantly on WhatsApp.
+          </p>
+          <div class="cta__actions">
+            <a
+              href="schedule.html"
+              class="btn btn--primary btn--lg btn--magnetic"
+            >
+              <span>Schedule Consultation</span>
+              <svg class="icon" width="18" height="18">
+                <use href="#i-arrow" />
+              </svg>
             </a>
-            <a href="https://wa.me/9779745717445" class="btn btn--outline-light btn--lg btn--magnetic" target="_blank" rel="noopener">
-            <svg class="icon" width="18" height="18"><use href="#i-whatsapp"/></svg>
-            <span>Chat on WhatsApp</span>
+            <a
+              href="https://wa.me/9779745717445"
+              class="btn btn--outline-light btn--lg btn--magnetic"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="icon" width="18" height="18">
+                <use href="#i-whatsapp" />
+              </svg>
+              <span>Chat on WhatsApp</span>
             </a>
+          </div>
         </div>
-        </div>
-    </section>
-
+      </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer" id="contact">
-    <div class="container">
+      <div class="container">
         <div class="footer__grid">
-        <div class="footer__col footer__col--brand">
+          <div class="footer__col footer__col--brand">
             <a href="index.html" class="footer__brand">
-            <span class="nav__mark"><img src="assets/img/logo-navy.png" alt="" width="40" height="40" loading="lazy" /></span>
-            <span class="nav__word">Appstract</span>
+              <span class="nav__mark"
+                ><img
+                  src="assets/img/logo-navy.png"
+                  alt=""
+                  width="40"
+                  height="40"
+                  loading="lazy"
+              /></span>
+              <span class="nav__word">Appstract</span>
             </a>
-            <p class="footer__about">AI-first software development company specializing in custom software, intelligent automation, AI agents, digital growth, and cybersecurity consulting.</p>
+            <p class="footer__about">
+              AI-first software development company specializing in custom
+              software, intelligent automation, AI agents, digital growth, and
+              cybersecurity consulting.
+            </p>
             <div class="footer__social">
-            <a href="#" class="social-icon" aria-label="LinkedIn"><svg class="icon" width="18" height="18"><use href="#i-linkedin"/></svg></a>
-            <a href="#" class="social-icon" aria-label="Facebook"><svg class="icon" width="18" height="18"><use href="#i-facebook"/></svg></a>
-            <a href="#" class="social-icon" aria-label="Instagram"><svg class="icon" width="18" height="18"><use href="#i-instagram"/></svg></a>
-            <a href="#" class="social-icon" aria-label="YouTube"><svg class="icon" width="18" height="18"><use href="#i-youtube"/></svg></a>
-            <a href="#" class="social-icon" aria-label="TikTok"><svg class="icon" width="18" height="18"><use href="#i-tiktok"/></svg></a>
-            <a href="#" class="social-icon" aria-label="X"><svg class="icon" width="18" height="18"><use href="#i-x"/></svg></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-linkedin" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="Facebook"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-facebook" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="Instagram"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-instagram" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="YouTube"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-youtube" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="TikTok"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-tiktok" /></svg
+              ></a>
+              <a href="#" class="social-icon" aria-label="X"
+                ><svg class="icon" width="18" height="18">
+                  <use href="#i-x" /></svg
+              ></a>
             </div>
-        </div>
-        <div class="footer__col">
+          </div>
+          <div class="footer__col">
             <h3 class="footer__title">Quick Links</h3>
             <ul class="footer__links">
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="index.html#portfolio">Review</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="schedule.html">Schedule Consultation</a></li>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="index.html#portfolio">Review</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="schedule.html">Schedule Consultation</a></li>
             </ul>
-        </div>
-        <div class="footer__col">
+          </div>
+          <div class="footer__col">
             <h3 class="footer__title">Services</h3>
             <ul class="footer__links">
-            <li><a href="services.html#svc-software">Software Development</a></li>
-            <li><a href="services.html#svc-ai">AI Agents &amp; Automation</a></li>
-            <li><a href="services.html#svc-marketing">Digital Marketing</a></li>
-            <li><a href="services.html#svc-ads">Ads Production</a></li>
-            <li><a href="services.html#svc-security">IT Consulting &amp; Cybersecurity</a></li>
+              <li>
+                <a href="services.html#svc-software">Software Development</a>
+              </li>
+              <li>
+                <a href="services.html#svc-ai">AI Agents &amp; Automation</a>
+              </li>
+              <li>
+                <a href="services.html#svc-marketing">Digital Marketing</a>
+              </li>
+              <li><a href="services.html#svc-ads">Ads Production</a></li>
+              <li>
+                <a href="services.html#svc-security"
+                  >IT Consulting &amp; Cybersecurity</a
+                >
+              </li>
             </ul>
-        </div>
-        <div class="footer__col">
+          </div>
+          <div class="footer__col">
             <h3 class="footer__title">Get in Touch</h3>
             <ul class="footer__contact">
-            <li><svg class="icon" width="18" height="18"><use href="#i-phone"/></svg><a href="tel:+9779745717445">+977 974 571 7445</a></li>
-            <li><svg class="icon" width="18" height="18"><use href="#i-whatsapp"/></svg><a href="https://wa.me/9779745717445" target="_blank" rel="noopener">WhatsApp Chat</a></li>
-            <li><svg class="icon" width="18" height="18"><use href="#i-mail"/></svg><a href="mailto:info@appstractdev.com">info@appstractdev.com</a></li>
-            <li><svg class="icon" width="18" height="18"><use href="#i-clock"/></svg><span>Sun &ndash; Fri, 10:00 AM &ndash; 6:00 PM (NPT)</span></li>
-            <li><svg class="icon" width="18" height="18"><use href="#i-pin"/></svg><span>Serving Nepal &amp; international clients</span></li>
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-phone" /></svg
+                ><a href="tel:+9779745717445">+977 974 571 7445</a>
+              </li>
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-whatsapp" /></svg
+                ><a
+                  href="https://wa.me/9779745717445"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp Chat</a
+                >
+              </li>
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-mail" /></svg
+                ><a href="mailto:info@appstractdev.com"
+                  >info@appstractdev.com</a
+                >
+              </li>
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-clock" /></svg
+                ><span>Sun &ndash; Fri, 10:00 AM &ndash; 6:00 PM (NPT)</span>
+              </li>
+              <li>
+                <svg class="icon" width="18" height="18">
+                  <use href="#i-pin" /></svg
+                ><span>Serving Nepal &amp; international clients</span>
+              </li>
             </ul>
-        </div>
+          </div>
         </div>
         <div class="footer__bottom">
-        <p>&copy; <span id="year">2026</span> Appstract Development Pvt. Ltd. All rights reserved.</p>
-        <div class="footer__legal">
+          <p>
+            &copy; <span id="year">2026</span> Appstract Development Pvt. Ltd.
+            All rights reserved.
+          </p>
+          <div class="footer__legal">
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
     </footer>
 
-    <a href="https://wa.me/9779745717445" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg class="icon" width="26" height="26"><use href="#i-whatsapp"/></svg>
+    <a
+      href="https://wa.me/9779745717445"
+      class="fab-whatsapp"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg class="icon" width="26" height="26"><use href="#i-whatsapp" /></svg>
     </a>
 
     <script src="js/main.js" defer></script>
     <script src="js/services.js" defer></script>
-    </body>
-    </html>
+  </body>
+</html>
