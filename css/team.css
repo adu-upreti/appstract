@@ -1,0 +1,362 @@
+    /* ==========================================================================
+    APPSTRACT — Team Page Styles
+    Covers: page hero, team grid & cards only.
+    Navbar, footer, CTA, and shared tokens live in style.css.
+    ========================================================================== */
+
+    /* --------------------------------------------------------------------------
+    TEAM PAGE HERO
+    -------------------------------------------------------------------------- */
+    .team-hero {
+    position: relative;
+    background: var(--navy-950);
+    overflow: hidden;
+    padding-top: calc(var(--nav-h) + clamp(3rem, 8vw, 5rem));
+    padding-bottom: clamp(3.5rem, 8vw, 6rem);
+    text-align: center;
+    }
+
+    .team-hero__glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+    }
+
+    .team-hero__glow--a {
+    width: 45vw;
+    height: 45vw;
+    max-width: 520px;
+    max-height: 520px;
+    top: -20%;
+    right: -10%;
+    background: radial-gradient(circle, rgba(41, 198, 255, 0.28), transparent 70%);
+    animation: drift-a 22s ease-in-out infinite alternate;
+    }
+
+    .team-hero__glow--b {
+    width: 38vw;
+    height: 38vw;
+    max-width: 440px;
+    max-height: 440px;
+    bottom: -20%;
+    left: -8%;
+    background: radial-gradient(circle, rgba(11, 63, 181, 0.45), transparent 70%);
+    animation: drift-b 28s ease-in-out infinite alternate;
+    }
+
+    .team-hero__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    }
+
+    .team-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(2.25rem, 5.5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--on-dark);
+    margin: 0;
+    }
+
+    .team-hero__lead {
+    color: var(--on-dark-soft);
+    font-size: clamp(1rem, 1.8vw, 1.125rem);
+    line-height: 1.8;
+    max-width: 52ch;
+    margin: 0;
+    }
+
+    .team-hero__scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    position: relative;
+    z-index: 1;
+    }
+
+    .team-hero__scroll-line {
+    position: relative;
+    width: 1px;
+    height: 48px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15), transparent);
+    overflow: hidden;
+    }
+
+    .team-hero__scroll-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 1px;
+    height: 20px;
+    background: var(--brand-gradient);
+    animation: scroll-cue 2.2s ease-in-out infinite;
+    }
+
+    /* --------------------------------------------------------------------------
+    TEAM SECTION
+    -------------------------------------------------------------------------- */
+    .team-section {
+    padding-block: clamp(4rem, 8vw, 7rem);
+    background: var(--bg-soft);
+    }
+
+    /* --------------------------------------------------------------------------
+    TEAM GRID — 1 col mobile → 2 col tablet → 2 col desktop (centered)
+    Featured card spans full width on desktop to stand out
+    -------------------------------------------------------------------------- */
+    .team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    }
+
+    @media (min-width: 600px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+
+    @media (min-width: 960px) {
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Featured card (co-founder) takes the first column fully */
+    .team-card--featured {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+    }
+
+    /* --------------------------------------------------------------------------
+    TEAM CARD
+    -------------------------------------------------------------------------- */
+    .team-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-xl);
+    overflow: hidden;
+    transition: border-color var(--dur-base) var(--ease),
+                box-shadow var(--dur-base) var(--ease);
+    transform-style: preserve-3d;
+    will-change: transform;
+    }
+
+    /* Cursor spotlight */
+    .team-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        240px circle at var(--mx, 50%) var(--my, 50%),
+        rgba(41, 198, 255, 0.09),
+        transparent 70%
+    );
+    opacity: 0;
+    transition: opacity var(--dur-base) var(--ease);
+    pointer-events: none;
+    z-index: 0;
+    border-radius: inherit;
+    }
+
+    .team-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-lg);
+    }
+
+    .team-card:hover::before {
+    opacity: 1;
+    }
+
+    /* Photo area */
+    .team-card__photo-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: linear-gradient(145deg, var(--navy-800), var(--navy-950));
+    }
+
+    .team-card--featured .team-card__photo-wrap {
+    aspect-ratio: 3 / 4;
+    }
+
+    /* Actual photo — swap the placeholder div for an <img> later */
+    .team-card__photo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(60% 60% at 50% 35%, rgba(41, 198, 255, 0.18), transparent 70%),
+        linear-gradient(160deg, var(--navy-700), var(--navy-950));
+    transition: transform 0.7s var(--ease);
+    }
+
+    /* When real <img> is placed inside .team-card__photo-wrap directly */
+    .team-card__photo-wrap > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s var(--ease);
+    }
+
+    .team-card:hover .team-card__photo,
+    .team-card:hover .team-card__photo-wrap > img {
+    transform: scale(1.04);
+    }
+
+    /* Gradient overlay at bottom of photo */
+    .team-card__photo-wrap::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55%;
+    background: linear-gradient(to top, rgba(6, 11, 31, 0.85), transparent);
+    pointer-events: none;
+    }
+
+    /* Initials placeholder */
+    .team-card__initials {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 700;
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+    user-select: none;
+    }
+
+    /* Ambient glow behind photo */
+    .team-card__photo-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(50% 50% at 50% 60%, rgba(30, 140, 255, 0.25), transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+    }
+
+    /* Card body */
+    .team-card__body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 1.625rem 1.75rem 1.75rem;
+    flex: 1;
+    }
+
+    /* Role badge */
+    .team-card__role-badge {
+    display: inline-flex;
+    align-self: flex-start;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--brand-gradient-soft);
+    border: 1px solid rgba(30, 140, 255, 0.2);
+    padding: 0.3rem 0.75rem;
+    border-radius: var(--r-full);
+    }
+
+    .team-card--featured .team-card__role-badge {
+    background: var(--brand-gradient);
+    color: #fff;
+    border-color: transparent;
+    font-size: 0.75rem;
+    }
+
+    /* Name */
+    .team-card__name {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    margin: 0;
+    line-height: 1.2;
+    }
+
+    /* Bio */
+    .team-card__bio {
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    color: var(--ink-2);
+    margin: 0;
+    flex: 1;
+    }
+
+    /* LinkedIn link */
+    .team-card__linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-self: flex-start;
+    padding: 0.55rem 1.1rem;
+    border-radius: var(--r-full);
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--ink);
+    transition: background var(--dur-fast) var(--ease),
+                color var(--dur-fast) var(--ease),
+                border-color var(--dur-fast) var(--ease),
+                transform var(--dur-fast) var(--ease-spring);
+    }
+
+    .team-card__linkedin .icon {
+    color: #0a66c2;
+    transition: color var(--dur-fast) var(--ease);
+    }
+
+    .team-card__linkedin:hover {
+    background: #0a66c2;
+    color: #fff;
+    border-color: #0a66c2;
+    transform: translateY(-2px);
+    }
+
+    .team-card__linkedin:hover .icon {
+    color: #fff;
+    }
+
+    /* --------------------------------------------------------------------------
+    REDUCED MOTION — team page specifics
+    -------------------------------------------------------------------------- */
+    @media (prefers-reduced-motion: reduce) {
+    .team-hero__glow--a,
+    .team-hero__glow--b,
+    .team-hero__scroll-line::after {
+        animation: none;
+    }
+
+    .team-card {
+        transition: none;
+        will-change: auto;
+    }
+    }
